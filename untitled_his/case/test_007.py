@@ -126,7 +126,7 @@ class TestHis(unittest.TestCase):
         time.sleep(5)
         ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer11"]/div[2]/div/ul/li[2]/div[1]/input')))  #
         ys.clear()
-        ys.send_keys(u"644.98") # 输入现金金额
+        ys.send_keys(u"645.00") # 输入现金金额
         time.sleep(5)
         ys = WebDriverWait(browser, 20, 0.5).until(
             EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer11"]/div[2]/div/ul/li[2]/div[2]/i[1]')))  #
@@ -137,20 +137,20 @@ class TestHis(unittest.TestCase):
         ys.clear()
         ys.send_keys(u"500.00")  # 输入刷卡金额
         time.sleep(5)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer11"]/div[2]/div/ul/li[3]/div[1]/i[1]')))  #
-        ys.click()  #选择微信
-        time.sleep(5)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer11"]/div[2]/div/ul/li[3]/div[1]/input')))  #
-        ys.clear()
-        ys.send_keys(u"0.01")  # 输入微信金额
-        time.sleep(5)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer11"]/div[2]/div/ul/li[3]/div[2]/i[1]')))  #
-        ys.click()  #选择支付宝
-        time.sleep(5)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer11"]/div[2]/div/ul/li[3]/div[2]/input')))  #
-        ys.clear()
-        ys.send_keys(u"0.01")  # 输入支付宝金额
-        time.sleep(5)
+        # ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer11"]/div[2]/div/ul/li[3]/div[1]/i[1]')))  #
+        # ys.click()  #选择微信
+        # time.sleep(5)
+        # ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer11"]/div[2]/div/ul/li[3]/div[1]/input')))  #
+        # ys.clear()
+        # ys.send_keys(u"0.01")  # 输入微信金额
+        # time.sleep(5)
+        # ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer11"]/div[2]/div/ul/li[3]/div[2]/i[1]')))  #
+        # ys.click()  #选择支付宝
+        # time.sleep(5)
+        # ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer11"]/div[2]/div/ul/li[3]/div[2]/input')))  #
+        # ys.clear()
+        # ys.send_keys(u"0.01")  # 输入支付宝金额
+        # time.sleep(5)
         ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer11"]/div[2]/div/ul/li[4]/div[1]/i[1]')))  #个人汇款
         ys.click()  # 选择个人汇款
         time.sleep(5)

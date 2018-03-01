@@ -39,7 +39,7 @@ class TestHis(unittest.TestCase):
         print ("setUp")
     @classmethod
     def tearDownClass(cls):
-        # browser.quit()
+        browser.quit()
         time.sleep(2)
         print ("TearDown")
 
@@ -312,17 +312,24 @@ class TestHis(unittest.TestCase):
         time.sleep(1)
         browser.find_element_by_xpath('//*[@id="stockIn_edit_check"]').click()  # 在审核详情页点击审核
 
-        time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="StockBills_menu0"]/span').click()  # 点击详情
-        time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="ajax-content"]/div/div[2]/div[5]/span[5]').click()  # 点击红冲
-        time.sleep(2)
-        browser.current_window_handle  # 此行代码用来定位当前页面
-        time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="gainBtn"]').click()  # 点击获取验证码
-        time.sleep(30)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer48"]/div[2]/div/p/span')))  #
-        ys.click()  #点击确定
+
+
+        #药品入库红冲
+        # time.sleep(2)
+        # browser.find_element_by_xpath('//*[@id="StockBills_menu0"]/span').click()  # 点击详情
+        # time.sleep(2)
+        # browser.find_element_by_xpath('//*[@id="ajax-content"]/div/div[2]/div[5]/span[5]').click()  # 点击红冲
+        # time.sleep(2)
+        # browser.current_window_handle  # 此行代码用来定位当前页面
+        # time.sleep(2)
+        # browser.find_element_by_xpath('//*[@id="gainBtn"]').click()  # 点击获取验证码
+        # time.sleep(30)
+        # ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer48"]/div[2]/div/p/span')))  #
+        # ys.click()  #点击确定
+
+
+
+
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="content"]/div[3]/div/div/ul/li[4]/a').click()  # 点击库存管理
         time.sleep(2)
@@ -494,25 +501,29 @@ class TestHis(unittest.TestCase):
         browser.find_element_by_xpath('//*[@id="stockIn_edit_check"]').click()  # 在审核页点击审核
         time.sleep(2)
 
-        browser.find_element_by_xpath('//*[@id="content"]/div[3]/div/div/ul/li[4]/a/span').click()  # 点击库存管理
-        time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="search"]').send_keys(u"阿奇霉素注射液")  #
-        time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="home_search"]/span[2]').click()  # 点击查询
-        time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="content"]/div[3]/div/div/ul/li[2]/a/span').click()  # 点击出库单管理
-        time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="StockBills_menu0"]/span').click()  # 点击详情
-        time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="ajax-content"]/div/div[2]/div[3]/span[5]').click()  # 点击红冲
-        time.sleep(2)
-        browser.current_window_handle  # 此行代码用来定位当前页面
-        time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="gainBtn"]').click()  # 点击获取验证码
-        time.sleep(20)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer125"]/div[2]/div/p/span')))  #
-        ys.click()  #点击确定
-        time.sleep(2)
+
+
+
+        #药品出库红冲
+        # browser.find_element_by_xpath('//*[@id="content"]/div[3]/div/div/ul/li[4]/a/span').click()  # 点击库存管理
+        # time.sleep(2)
+        # browser.find_element_by_xpath('//*[@id="search"]').send_keys(u"阿奇霉素注射液")  #
+        # time.sleep(2)
+        # browser.find_element_by_xpath('//*[@id="home_search"]/span[2]').click()  # 点击查询
+        # time.sleep(2)
+        # browser.find_element_by_xpath('//*[@id="content"]/div[3]/div/div/ul/li[2]/a/span').click()  # 点击出库单管理
+        # time.sleep(2)
+        # browser.find_element_by_xpath('//*[@id="StockBills_menu0"]/span').click()  # 点击详情
+        # time.sleep(2)
+        # browser.find_element_by_xpath('//*[@id="ajax-content"]/div/div[2]/div[3]/span[5]').click()  # 点击红冲
+        # time.sleep(2)
+        # browser.current_window_handle  # 此行代码用来定位当前页面
+        # time.sleep(2)
+        # browser.find_element_by_xpath('//*[@id="gainBtn"]').click()  # 点击获取验证码
+        # time.sleep(20)
+        # ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer125"]/div[2]/div/p/span')))  #
+        # ys.click()  #点击确定
+        # time.sleep(2)
 
 
 
