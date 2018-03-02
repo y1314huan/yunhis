@@ -27,10 +27,10 @@ class TestHis(unittest.TestCase):
     def setUpClass(cls):
         global browser
         browser.maximize_window()
-        browser.get("http://yun.oasisapp.cn:9080/uc/authentication/check?login=true&phone=&redirectUrl=http://yun.oasisapp.cn:8080/yunhis/security_check.action")
+        # browser.get("http://yun.oasisapp.cn:9080/uc/authentication/check?login=true&phone=&redirectUrl=http://yun.oasisapp.cn:8080/yunhis/security_check.action")
         # ## 测试地址
 
-        # browser.get("http://47.93.156.153:9090/uc/authentication/check?login=true&phone=&redirectUrl=http://47.93.156.153:8090/yunhis/security_check.action")
+        browser.get("http://47.93.156.153:9090/uc/authentication/check?login=true&phone=&redirectUrl=http://47.93.156.153:8090/yunhis/security_check.action")
         # 准正式地址
 
         # browser.get("http://his.oasiscare.cn/uc/authentication/check?login=true&phone=&redirectUrl=http://his.oasiscare.cn:80/yunhis/security_check.action")
@@ -187,10 +187,6 @@ class TestHis(unittest.TestCase):
         time.sleep(2)
         ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="print_buying"]')))  #
         ys.click()  #点击确定
-        time.sleep(30)
-        browser.current_window_handle  # 此行代码用来定位当前页面
-        time.sleep(5)
-        browser.find_element_by_xpath('//*[@id="print_buying1"]').click()#点击确定
         time.sleep(5)
         browser.back()
 

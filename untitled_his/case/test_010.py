@@ -26,10 +26,10 @@ class TestHis(unittest.TestCase):
     def setUpClass(cls):
         global browser
         browser.maximize_window()
-        browser.get("http://yun.oasisapp.cn:9080/uc/authentication/check?login=true&phone=&redirectUrl=http://yun.oasisapp.cn:8080/yunhis/security_check.action")
+        # browser.get("http://yun.oasisapp.cn:9080/uc/authentication/check?login=true&phone=&redirectUrl=http://yun.oasisapp.cn:8080/yunhis/security_check.action")
         ## 测试地址
 
-        # browser.get("http://47.93.156.153:9090/uc/authentication/check?login=true&phone=&redirectUrl=http://47.93.156.153:8090/yunhis/security_check.action")
+        browser.get("http://47.93.156.153:9090/uc/authentication/check?login=true&phone=&redirectUrl=http://47.93.156.153:8090/yunhis/security_check.action")
         # # 准正式地址
 
         # browser.get("http://his.oasiscare.cn/uc/authentication/check?login=true&phone=&redirectUrl=http://his.oasiscare.cn:80/yunhis/security_check.action")
@@ -237,6 +237,7 @@ class TestHis(unittest.TestCase):
         browser.find_element_by_xpath('//*[@id="setmeal"]/div[2]/div/span').click()  #点击打印
         time.sleep(3)
         browser.back()
+        time.sleep(2)
         browser.find_element_by_css_selector("#seeDoctoring_nav > ul > li.herbal-pres > a").click()  # 点击草药处方
         time.sleep(1)
         browser.find_element_by_xpath(
@@ -279,9 +280,13 @@ class TestHis(unittest.TestCase):
         browser.find_element_by_xpath('//*[@id="inspect_patient_content"]/div[1]/div[2]/a').click()  # 点击开始检验
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="inspectSavePrint"]').click()  # 点击保存与打印
+        time.sleep(3)
+        browser.current_window_handle  # 此行代码用来定位当前页面
         time.sleep(2)
+        # browser.find_element_by_xpath('//*[@id="inSaveYes"]').click()  #点击继续
+        # time.sleep(3)
         browser.back()  # 点击浏览器的返回
-        time.sleep(2)
+        time.sleep(5)
         browser.find_element_by_xpath('//*[@id="inspectSystm_patientCart_tab"]/li[3]/span[2]').click()  # 点击已完成
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="inspect_patient_content"]/div[1]/div[2]/a').click()  # 点击查看

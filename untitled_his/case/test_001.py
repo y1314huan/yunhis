@@ -30,10 +30,10 @@ class TestHis(unittest.TestCase):
     def setUpClass(cls):
         # global browser
         browser.maximize_window()
-        browser.get("http://yun.oasisapp.cn:9080/uc/authentication/check?login=true&phone=&redirectUrl=http://yun.oasisapp.cn:8080/yunhis/security_check.action")
+        # browser.get("http://yun.oasisapp.cn:9080/uc/authentication/check?login=true&phone=&redirectUrl=http://yun.oasisapp.cn:8080/yunhis/security_check.action")
         # # ## 测试地址
 
-        # browser.get("http://47.93.156.153:9090/uc/authentication/check?login=true&phone=&redirectUrl=http://47.93.156.153:8090/yunhis/security_check.action")
+        browser.get("http://47.93.156.153:9090/uc/authentication/check?login=true&phone=&redirectUrl=http://47.93.156.153:8090/yunhis/security_check.action")
         # 准正式地址
 
         # browser.get("http://his.oasiscare.cn/uc/authentication/check?login=true&phone=&redirectUrl=http://his.oasiscare.cn:80/yunhis/security_check.action")
@@ -175,12 +175,18 @@ class TestHis(unittest.TestCase):
         time.sleep(5)
         print ("预约挂号成功")
 
-    # 接诊
+
+
+
+    # WebDriverWait(browser, 10).until(lambda x: x.find_element("xpath", '')).click()
+ # 接诊
     def test003(self):
-        time.sleep(2)
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[4]/a/span[1]').click()
-        time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="doctor_patient_cart_content"]/div[1]/div[2]/span[1]').click()  # 点击接诊
+        WebDriverWait(browser, 10).until(lambda x: x.find_element("xpath", '/html/body/div[3]/aside/section/ul/li[4]/a/span[1]')).click()
+        # time.sleep(2)
+        # browser.find_element_by_xpath('').click()
+        # time.sleep(2)
+        WebDriverWait(browser, 10).until(lambda x: x.find_element("xpath", '//*[@id="doctor_patient_cart_content"]/div[1]/div[2]/span[1]')).click()
+        # browser.find_element_by_xpath('').click()  # 点击接诊
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="chielfComplaint"]').send_keys(u"感冒、发烧、咳嗽、嗓子疼")  # 输入主诉
         time.sleep(1)
@@ -191,11 +197,14 @@ class TestHis(unittest.TestCase):
         browser.find_element_by_css_selector("li > input[type=\"text\"]").send_keys(u"感冒")
         time.sleep(3)
         browser.find_element_by_xpath('//*[@id="saveHisTem"]').click()#在病例名称弹窗处点击保存
-        time.sleep(2)
-        browser.find_element_by_css_selector("input.select2-search__field").send_keys(u"感冒")  # 输入诊断信息
-        time.sleep(2)
-        browser.find_element_by_css_selector("input.select2-search__field").send_keys(Keys.ENTER)  # 现在开始引入Keys在此处在进行引用键盘事件，用enter键选择诊断信息
-        time.sleep(2)
+        time.sleep(5)
+        # WebDriverWait(browser, 10).until(lambda x: x.find_element("class_name", "tag-editor ui-sortable")).click()  # 选择诊所
+        # time.sleep(2)
+        # WebDriverWait(browser, 10).until(lambda x: x.find_element("class_name", "tag-editor ui-sortable")).send_keys(u"感冒")  # 选择诊所
+        # time.sleep(2)
+        # # browser.find_element_by_xpath('//*[@id="medical_record_content"]/div[2]/div[4]/div/ul').send_keys(u"感冒")  # 输入诊断信息
+        # # time.sleep(2)
+
         browser.find_element_by_xpath('//*[@id="doctorAdvice"]').send_keys(u"多喝水，好好休息")#填写处理意见
         time.sleep(2)
         browser.current_window_handle  # 此行代码用来定位当前页面
@@ -208,8 +217,8 @@ class TestHis(unittest.TestCase):
         time.sleep(2)
         browser.find_element_by_id("saveDocterSeeTem").click()#点击处理意见弹窗中的保存
         time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="history_save"]').click()  # 点击病例右上角的保存
-        time.sleep(2)
+        # browser.find_element_by_xpath('//*[@id="history_save"]').click()  # 点击病例右上角的保存
+        # time.sleep(2)
         print ("填写病例成功")
 
     # 接诊界面填写检验项目

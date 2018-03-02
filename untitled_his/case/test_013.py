@@ -26,10 +26,10 @@ class TestHis(unittest.TestCase):
     def setUpClass(cls):
         global browser
         browser.maximize_window()
-        browser.get("http://yun.oasisapp.cn:9080/uc/authentication/check?login=true&phone=&redirectUrl=http://yun.oasisapp.cn:8080/yunhis/security_check.action")
+        # browser.get("http://yun.oasisapp.cn:9080/uc/authentication/check?login=true&phone=&redirectUrl=http://yun.oasisapp.cn:8080/yunhis/security_check.action")
         ## 测试地址
 
-        # browser.get("http://47.93.156.153:9090/uc/authentication/check?login=true&phone=&redirectUrl=http://47.93.156.153:8090/yunhis/security_check.action")
+        browser.get("http://47.93.156.153:9090/uc/authentication/check?login=true&phone=&redirectUrl=http://47.93.156.153:8090/yunhis/security_check.action")
         # # 准正式地址
 
         # browser.get("http://his.oasiscare.cn/uc/authentication/check?login=true&phone=&redirectUrl=http://his.oasiscare.cn:80/yunhis/security_check.action")
@@ -142,11 +142,11 @@ class TestHis(unittest.TestCase):
         browser.find_element_by_xpath('//*[@id="addOtherRelateList"]/p/span[1]').click()  #选择专家异地出诊交通费3
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="addSave"]').click()  #点击保存与收费
-        time.sleep(3)
+        time.sleep(5)
         browser.find_element_by_xpath('//*[@id="checkform"]/div/div[2]/div[6]/div/table/tbody/tr[2]/td[8]/i').click()  #点击删除
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="addOtherFee"]').send_keys(u"专家异地出诊交通费4")  #输入专家异地出诊交通费4
-        time.sleep(3)
+        time.sleep(5)
         browser.find_element_by_xpath('//*[@id="addOtherRelateList"]/p/span[1]').click()  #选择专家异地出诊交通费4
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="addSave"]').click()  #点击保存与收费
@@ -159,13 +159,13 @@ class TestHis(unittest.TestCase):
         browser.find_element_by_xpath('//*[@id="ajax-content"]/div/div[1]/form/div/div[2]/div[10]/p[1]/i').click()  #点击收费
         time.sleep(2)
         browser.current_window_handle  # 此行代码用来定位当前页面
-        time.sleep(3)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer44"]/div[2]/div/ul/li[2]/div[1]/i[1]')))  #
+        time.sleep(5)
+        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer46"]/div[2]/div/ul/li[2]/div[1]/i[1]')))  #
         ys.click()  #选择现金
         time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="layui-layer44"]/div[2]/div/ul/li[2]/div[1]/input').clear()  #
+        browser.find_element_by_xpath('//*[@id="layui-layer46"]/div[2]/div/ul/li[2]/div[1]/input').clear()  #
         time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="layui-layer44"]/div[2]/div/ul/li[2]/div[1]/input').send_keys(u"11000.00")  #
+        browser.find_element_by_xpath('//*[@id="layui-layer46"]/div[2]/div/ul/li[2]/div[1]/input').send_keys(u"11000.00")  #
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="print_buying"]').click()  #点击确定
         time.sleep(2)

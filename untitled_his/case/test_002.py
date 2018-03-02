@@ -28,10 +28,10 @@ class TestHis(unittest.TestCase):
     def setUpClass(cls):
         # global browser
         browser.maximize_window()
-        browser.get("http://yun.oasisapp.cn:9080/uc/authentication/check?login=true&phone=&redirectUrl=http://yun.oasisapp.cn:8080/yunhis/security_check.action")
+        # browser.get("http://yun.oasisapp.cn:9080/uc/authentication/check?login=true&phone=&redirectUrl=http://yun.oasisapp.cn:8080/yunhis/security_check.action")
         # # ## 测试地址
 
-        # browser.get("http://47.93.156.153:9090/uc/authentication/check?login=true&phone=&redirectUrl=http://47.93.156.153:8090/yunhis/security_check.action")
+        browser.get("http://47.93.156.153:9090/uc/authentication/check?login=true&phone=&redirectUrl=http://47.93.156.153:8090/yunhis/security_check.action")
         # 准正式地址
 
         # browser.get("http://his.oasiscare.cn/uc/authentication/check?login=true&phone=&redirectUrl=http://his.oasiscare.cn:80/yunhis/security_check.action")
@@ -73,165 +73,50 @@ class TestHis(unittest.TestCase):
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="addOtherFee"]').send_keys(u"一次性纱布块")  #
         time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="addOtherRelateList"]/p/span[1]').click()  #选择碘伏棉签
+        browser.find_element_by_xpath('//*[@id="addOtherRelateList"]/p/span[1]').click()  #选择一次性纱布块
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="addOtherFee"]').send_keys(u"专家异地出诊交通费1")  #
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="addOtherRelateList"]/p/span[1]').click()  #选择专家异地出诊交通费1
         time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="addSave"]').click()  #点击收费并保存
-        time.sleep(5)
-        browser.find_element_by_xpath('//*[@id="content"]/div[1]/div/div/ul/li[2]').click()  #点击收费
-        time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="constList"]/div[2]/ul/li[1]/div/div[3]').click()  #点击追加
-        time.sleep(2)
-        target = browser.find_element_by_xpath('//*[@id="addSave"]')  # 滑动到收费并保存
-        browser.execute_script("arguments[0].scrollIntoView();", target)  #
-        time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="checkform"]/div/div[2]/div[6]/div/table/tbody/tr[2]/td[8]/i').click()  #删除专家异地出诊交通费1
-        time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="addSave"]').click()  #点击保存并收费
-        time.sleep(5)
-        target = browser.find_element_by_xpath('//*[@id="ajax-content"]/div/div[1]/form/div/div[2]/div[10]/p[1]/i')  # 滑动到收费并保存
-        browser.execute_script("arguments[0].scrollIntoView();", target)  #
-        time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="content"]/div[1]/div/div/ul/li[2]/a').click()#点击收费
-        time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="ajax-content"]/div/div[1]/div[2]/ul/li/div/div[2]').click()#点击待收费
-        time.sleep(5)
-        target = browser.find_element_by_xpath('//*[@id="ajax-content"]/div/div[1]/form/div/div[2]/div[10]/p[1]/i')  # 滑动到收费
-        browser.execute_script("arguments[0].scrollIntoView();", target)  #
-        time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="ajax-content"]/div/div[1]/form/div/div[2]/div[10]/p[1]/i').click()  # 点击收费
-        time.sleep(2)
-        browser.current_window_handle  # 此行代码用来定位当前页面
-        time.sleep(2)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer13"]/div[2]/div/ul/li[2]/div[1]/i[1]')))  #
-        ys.click()  #选择现金
-        time.sleep(3)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer13"]/div[2]/div/ul/li[2]/div[1]/input')))  #
-        ys.clear()
-        ys.send_keys(u"4660.40") # 输入现金金额
-        time.sleep(5)
-        # ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer13"]/div[2]/div/ul/li[3]/div[1]/i[1]')))  #
-        # ys.click()  #选择微信
-        # time.sleep(5)
-        # ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer13"]/div[2]/div/ul/li[3]/div[1]/input')))  #
-        # ys.clear()
-        # ys.send_keys(u"0.01")  # 输入微信金额
-        # time.sleep(5)
-        # ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer13"]/div[2]/div/ul/li[3]/div[2]/i[1]')))  #
-        # ys.click()  #选择支付宝
-        # time.sleep(5)
-        # ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer13"]/div[2]/div/ul/li[3]/div[2]/input')))  #
-        # ys.clear()
-        # ys.send_keys(u"0.01")  # 输入支付宝金额
-        # time.sleep(5)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="print_buying"]')))  #
-        ys.click()  #点击确定
-        time.sleep(30)
-        browser.current_window_handle  # 此行代码用来定位当前页面
-        time.sleep(5)
-        browser.find_element_by_class_name("layui-layer-setwin").click()#点击×
-        time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="ajax-content"]/div/div[1]/form/div/div[2]/div[9]/h4/span').click()  #点击详情
-        time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="content"]/div[1]/div/div/ul/li[2]/a').click()  # 点击收费
-        time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="constList"]/div[2]/ul/li[1]/div/div[3]').click()  # 点击追加
-        time.sleep(2)
-        target = browser.find_element_by_xpath('//*[@id="addSave"]')  #滑动到保存并收费
-        browser.execute_script("arguments[0].scrollIntoView();", target)  #
-        time.sleep(2)
         browser.find_element_by_xpath('//*[@id="addOtherFee"]').send_keys(u"专家异地出诊交通费2")
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="addOtherRelateList"]/p/span[1]').click()  # 选择专家异地出诊交通费2
         time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="addSave"]').click()  # 点击收费并保存
+        browser.find_element_by_xpath('//*[@id="addSave"]').click()  #点击保存并收费
         time.sleep(5)
         target = browser.find_element_by_xpath('//*[@id="ajax-content"]/div/div[1]/form/div/div[2]/div[10]/p[1]/i')  #滑动到收费
         browser.execute_script("arguments[0].scrollIntoView();", target)  #
-        time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="ajax-content"]/div/div[1]/form/div/div[2]/div[10]/p[1]/i').click()  # 点击收费
-        time.sleep(2)
-        browser.current_window_handle  # 此行代码用来定位当前页面
-        time.sleep(5)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer21"]/div[2]/div/ul/li[2]/div[1]/i[1]')))  #
-        ys.click()  #选择现金
-        time.sleep(5)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer21"]/div[2]/div/ul/li[2]/div[1]/input')))  #
-        ys.clear()
-        ys.send_keys(u"5244.68") # 输入现金金额
-        time.sleep(5)
-        # ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer21"]/div[2]/div/ul/li[3]/div[1]/i[1]')))  #
-        # ys.click()  #选择微信
-        # time.sleep(5)
-        # ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer21"]/div[2]/div/ul/li[3]/div[1]/input')))  #
-        # ys.clear()
-        # ys.send_keys(u"0.01")  # 输入微信金额
-        # time.sleep(5)
-        # ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer21"]/div[2]/div/ul/li[3]/div[2]/i[1]')))  #
-        # ys.click()  #选择支付宝
-        # time.sleep(5)
-        # ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer21"]/div[2]/div/ul/li[3]/div[2]/input')))  #
-        # ys.clear()
-        # ys.send_keys(u"0.01")  # 输入支付宝金额
-        # time.sleep(5)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="print_buying"]')))  #
-        ys.click()  #点击确定
-        time.sleep(30)
-        browser.current_window_handle  # 此行代码用来定位当前页面
-        time.sleep(5)
-        browser.find_element_by_class_name('layui-layer-setwin').click()#点击×
-        time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="ajax-content"]/div/div[1]/form/div/div[2]/div[9]/h4/span').click()  #点击详情
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="ajax-content"]/div/div[1]/form/div/div[2]/div[10]/p[1]/i').click()  #点击收费
         time.sleep(2)
         browser.current_window_handle  # 此行代码用来定位当前页面
         time.sleep(5)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer25"]/div[2]/div/ul/li[2]/div[1]/i[1]')))  #
+        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer7"]/div[2]/div/ul/li[2]/div[1]/i[1]')))  #
         ys.click()  #选择现金
         time.sleep(5)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer25"]/div[2]/div/ul/li[2]/div[1]/input')))  #
+        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer7"]/div[2]/div/ul/li[2]/div[1]/input')))  #
         ys.clear()
-        ys.send_keys(u"244.66") # 输入现金金额
+        ys.send_keys(u"536.85") # 输入现金金额
         time.sleep(5)
-        ys = WebDriverWait(browser, 20, 0.5).until(
-            EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer25"]/div[2]/div/ul/li[2]/div[2]/i[1]')))  #
+        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer7"]/div[2]/div/ul/li[2]/div[2]/i[1]')))  #
         ys.click()  # 选择刷卡
         time.sleep(5)
-        ys = WebDriverWait(browser, 20, 0.5).until(
-            EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer25"]/div[2]/div/ul/li[2]/div[2]/input')))  #
+        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer7"]/div[2]/div/ul/li[2]/div[2]/input')))  #
         ys.clear()
         ys.send_keys(u"1000.00")  # 输入刷卡金额
         time.sleep(5)
-        # ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer25"]/div[2]/div/ul/li[3]/div[1]/i[1]')))  #
-        # ys.click()  #选择微信
-        # time.sleep(5)
-        # ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer25"]/div[2]/div/ul/li[3]/div[1]/input')))  #
-        # ys.clear()
-        # ys.send_keys(u"0.01")  # 输入微信金额
-        # time.sleep(5)
-        # ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer25"]/div[2]/div/ul/li[3]/div[2]/i[1]')))  #
-        # ys.click()  #选择支付宝
-        # time.sleep(5)
-        # ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer25"]/div[2]/div/ul/li[3]/div[2]/input')))  #
-        # ys.clear()
-        # ys.send_keys(u"0.01")  # 输入支付宝金额
-        # time.sleep(5)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer25"]/div[2]/div/ul/li[4]/div[1]/i[1]')))  #个人汇款
+        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer7"]/div[2]/div/ul/li[4]/div[1]/i[1]')))  #个人汇款
         ys.click()  # 选择个人汇款
         time.sleep(5)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer25"]/div[2]/div/ul/li[4]/div[1]/input')))  # 输入个人汇款金额
+        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer7"]/div[2]/div/ul/li[4]/div[1]/input')))  # 输入个人汇款金额
         ys.clear()
         ys.send_keys(u"1000")  # 输入个人汇款金额
         time.sleep(5)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located(
-            (By.XPATH, '//*[@id="layui-layer25"]/div[2]/div/ul/li[4]/div[2]/i[1]')))  # 公司汇款
+        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer7"]/div[2]/div/ul/li[4]/div[2]/i[1]')))  # 公司汇款
         ys.click()  # 选择公司汇款
         time.sleep(5)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer25"]/div[2]/div/ul/li[4]/div[2]/input')))  # 公司汇款
+        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer7"]/div[2]/div/ul/li[4]/div[2]/input')))  # 公司汇款
         ys.clear()
         ys.send_keys(u"1000")  # 输入公司汇款金额
         time.sleep(5)
@@ -242,12 +127,10 @@ class TestHis(unittest.TestCase):
         # ys.clear()
         # ys.send_keys(u"1000")   # 储值卡输入金额
         # time.sleep(5)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located(
-            (By.XPATH, '//*[@id="layui-layer25"]/div[2]/div/ul/li[5]/div[2]/i[1]')))  # 选择其他
+        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer7"]/div[2]/div/ul/li[5]/div[2]/i[1]')))  # 选择其他
         ys.click()  # 选择其他
         time.sleep(5)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located(
-            (By.XPATH, '//*[@id="layui-layer25"]/div[2]/div/ul/li[5]/div[2]/input')))  # 其他输入金额
+        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer7"]/div[2]/div/ul/li[5]/div[2]/input')))  # 其他输入金额
         ys.clear()
         ys.send_keys(u"2000")  # 其他输入金额
         time.sleep(5)
@@ -256,13 +139,10 @@ class TestHis(unittest.TestCase):
         time.sleep(2)
         ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="print_buying"]')))  #
         ys.click()  #点击确定
-        time.sleep(30)
-        browser.current_window_handle  # 此行代码用来定位当前页面
-        time.sleep(5)
-        browser.find_element_by_xpath('//*[@id="print_buying1"]').click()#点击确定
-        time.sleep(5)
+        time.sleep(3)
         browser.back()
-        time.sleep(2)
+        time.sleep(3)
+
         browser.find_element_by_xpath('//*[@id="content"]/div[1]/div/div/ul/li[2]').click()  #点击收费
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="constList"]/div[1]/div[1]/span[2]').click()  # 点击已收费状态
