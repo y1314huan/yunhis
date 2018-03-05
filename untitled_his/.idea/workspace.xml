@@ -53,7 +53,7 @@
       <file leaf-file-name="test_006.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/case/test_006.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-16168">
+            <state relative-caret-position="1404">
               <caret line="63" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="692" selection-end-column="19" />
               <folding />
             </state>
@@ -63,14 +63,14 @@
       <file leaf-file-name="test_007.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/case/test_007.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5773">
+            <state relative-caret-position="1485">
               <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="report_and_send_email.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="report_and_send_email.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/report_and_send_email.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
@@ -80,10 +80,22 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="test_001.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/case/test_001.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="699" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="812" selection-end-column="19" />
+              <folding>
+                <element signature="e#121#151#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="test_008.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/case/test_008.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
+            <state relative-caret-position="1404">
               <caret line="63" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="1115" selection-end-column="19" />
               <folding />
             </state>
@@ -93,7 +105,7 @@
       <file leaf-file-name="test_009.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/case/test_009.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3974">
+            <state relative-caret-position="1269">
               <caret line="53" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="232" selection-end-column="19" />
               <folding />
             </state>
@@ -103,7 +115,7 @@
       <file leaf-file-name="test_010.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/case/test_010.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7096">
+            <state relative-caret-position="1323">
               <caret line="58" column="15" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="15" />
               <folding />
             </state>
@@ -113,7 +125,7 @@
       <file leaf-file-name="test_013.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/case/test_013.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2452">
+            <state relative-caret-position="1296">
               <caret line="59" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="180" selection-end-column="19" />
               <folding />
             </state>
@@ -123,7 +135,7 @@
       <file leaf-file-name="test_011.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/case/test_011.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1399">
+            <state relative-caret-position="1350">
               <caret line="59" column="14" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
               <folding />
             </state>
@@ -133,18 +145,8 @@
       <file leaf-file-name="test_012.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/case/test_012.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-157">
+            <state relative-caret-position="3132">
               <caret line="125" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="161" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_005.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case/test_005.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-10687">
-              <caret line="263" column="53" selection-start-line="263" selection-start-column="53" selection-end-line="263" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -282,6 +284,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -345,7 +348,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -377,29 +379,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.report_and_send_email">
-    <configuration default="false" name="Unittests in test_010" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="untitled" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/test_010.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in test_001">
     <configuration default="false" name="Unittests in test_011" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -481,6 +461,28 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/report_and_send_email.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in test_001" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/test_001.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -637,19 +639,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.Abookmoneyreturn" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_010" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test_011" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test_012" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in test_013" />
-      <item index="5" class="java.lang.String" itemvalue="Python.report_and_send_email" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_011" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test_012" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test_013" />
+      <item index="4" class="java.lang.String" itemvalue="Python.report_and_send_email" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in test_001" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.report_and_send_email" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_013" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test_012" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test_011" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in test_010" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test_001" />
+        <item index="1" class="java.lang.String" itemvalue="Python.report_and_send_email" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test_013" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test_012" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in test_011" />
       </list>
     </recent_temporary>
   </component>
@@ -670,8 +672,8 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_011 - 2018.03.03 at 00h 11m 11s.xml">
-      <configuration name="Unittests in test_011" configurationId="tests" />
+    <history-entry file="Unittests_in_test_001 - 2018.03.05 at 11h 56m 20s.xml">
+      <configuration name="Unittests in test_001" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_test_012 - 2018.03.03 at 00h 13m 43s.xml">
       <configuration name="Unittests in test_012" configurationId="tests" />
@@ -711,18 +713,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1911" y="-9" width="1938" height="1218" extended-state="6" />
+    <frame x="1911" y="-9" width="1938" height="1218" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12698413" sideWeight="0.5924453" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12698413" sideWeight="0.5924453" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29058117" sideWeight="0.48518518" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55331755" sideWeight="0.5021164" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296593" sideWeight="0.489418" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973544" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296593" sideWeight="0.4978836" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46192384" sideWeight="0.4978836" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46192384" sideWeight="0.4978836" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.104761906" sideWeight="0.4075547" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1178,16 +1180,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/test_001.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2236">
-          <caret line="699" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="812" selection-end-column="19" />
-          <folding>
-            <element signature="e#121#151#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/case/test_002.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1885">
@@ -1200,7 +1192,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1345">
           <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1214,7 +1205,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/case/test_005.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10687">
+        <state relative-caret-position="6804">
           <caret line="263" column="53" selection-start-line="263" selection-start-column="53" selection-end-line="263" selection-end-column="53" />
           <folding />
         </state>
@@ -1222,7 +1213,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/case/test_006.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16168">
+        <state relative-caret-position="1404">
           <caret line="63" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="692" selection-end-column="19" />
           <folding />
         </state>
@@ -1230,7 +1221,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/case/test_007.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5773">
+        <state relative-caret-position="1485">
           <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding />
         </state>
@@ -1238,7 +1229,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/case/test_008.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
+        <state relative-caret-position="1404">
           <caret line="63" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="1115" selection-end-column="19" />
           <folding />
         </state>
@@ -1246,7 +1237,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/case/test_009.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3974">
+        <state relative-caret-position="1269">
           <caret line="53" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="232" selection-end-column="19" />
           <folding />
         </state>
@@ -1254,7 +1245,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/case/test_010.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7096">
+        <state relative-caret-position="1323">
           <caret line="58" column="15" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="15" />
           <folding />
         </state>
@@ -1262,7 +1253,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/case/test_011.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1399">
+        <state relative-caret-position="1350">
           <caret line="59" column="14" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
           <folding />
         </state>
@@ -1270,7 +1261,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/case/test_012.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-157">
+        <state relative-caret-position="3132">
           <caret line="125" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="161" selection-end-column="19" />
           <folding />
         </state>
@@ -1278,7 +1269,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/case/test_013.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2452">
+        <state relative-caret-position="1296">
           <caret line="59" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="180" selection-end-column="19" />
           <folding />
         </state>
@@ -1289,6 +1280,16 @@
         <state relative-caret-position="405">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/test_001.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="699" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="812" selection-end-column="19" />
+          <folding>
+            <element signature="e#121#151#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
