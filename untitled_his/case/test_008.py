@@ -59,7 +59,9 @@ class TestHis(unittest.TestCase):
         time.sleep(5)
         print ("登录成功")
 
-    def test_system(self):
+
+#系统设置
+    def test002(self):
         time.sleep(2)
         target = browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[17]/a/span[1]')  # 滑动到个人信息
         browser.execute_script("arguments[0].scrollIntoView();", target)  # 滑动到个人信息

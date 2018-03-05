@@ -56,7 +56,7 @@ class TestHis(unittest.TestCase):
         print ("登录成功")
 
     #套餐
-    def test011(self):
+    def test002(self):
         time.sleep(2)
         browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[14]/a/span[1]').click()  #点击系统管理
         time.sleep(2)

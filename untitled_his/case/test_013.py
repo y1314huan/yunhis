@@ -57,7 +57,7 @@ class TestHis(unittest.TestCase):
 
 
     #签到接诊
-    def test_001(self):
+    def test002(self):
         browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[3]/a/span[1]').click()  # 点击预约挂号
         time.sleep(5)
         browser.find_element_by_xpath('//*[@id="registerName_input"]').send_keys(u"修改其他收费")  # 输入姓名

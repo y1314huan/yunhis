@@ -58,7 +58,7 @@ class TestHis(unittest.TestCase):
 
 
 
-    def test_HistoricalCases(self):
+    def test002(self):
         browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[3]/a').click()  # 点击预约挂号
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="registerName_input"]').send_keys(u"董焕焕")  #

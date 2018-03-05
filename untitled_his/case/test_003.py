@@ -59,7 +59,7 @@ class TestHis(unittest.TestCase):
 
 
     # 发药、退药
-    def test013(self):
+    def test002(self):
         global browser
         browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[9]/a/span[1]').click()# 点击收费/发药
         time.sleep(2)
@@ -105,7 +105,7 @@ class TestHis(unittest.TestCase):
         time.sleep(3)
 
     # 退费、退费管理
-    def test014(self):
+    def test003(self):
         time.sleep(2)
         browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[9]/a/span[1]').click()  # 点击收费/发药
         time.sleep(3)

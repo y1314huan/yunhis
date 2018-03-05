@@ -699,7 +699,7 @@ class TestHis(unittest.TestCase):
 
 
 # 患者管理
-    def test012(self):  # 患者管理
+    def test013(self):  # 患者管理
         time.sleep(2)
         browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[10]/a/span[1]').click()#点击患者管理
         time.sleep(2)

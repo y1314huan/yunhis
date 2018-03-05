@@ -61,7 +61,7 @@ class TestHis(unittest.TestCase):
 
 #直接售药
 #直接售药及直接售药的退费（包括全退、部分退）
-    def test_sell_drugs(self):
+    def test002(self):
         time.sleep(2)
         browser.find_element_by_css_selector("a.ajax-charge.ShouFei_a > span").click()  #点击收费、发药
         time.sleep(2)

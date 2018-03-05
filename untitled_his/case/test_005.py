@@ -58,7 +58,7 @@ class TestHis(unittest.TestCase):
 
 
     #签到接诊
-    def test_SignIn(self):
+    def test002(self):
         browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[3]/a/span[1]').click()  # 点击预约挂号
         time.sleep(5)
         browser.find_element_by_xpath('//*[@id="registerName_input"]').send_keys(u"董焕焕")  # 输入姓名
@@ -211,7 +211,7 @@ class TestHis(unittest.TestCase):
 
 
     #药品（耗材）入库、出库
-    def test_Storage(self):
+    def test003(self):
         # 入库
         time.sleep(3)
         browser.find_element_by_xpath('//*[@id="medical"]').click()  # 点击药房

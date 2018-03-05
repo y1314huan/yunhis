@@ -51,7 +51,7 @@ class TestHis(unittest.TestCase):
         print ("登录成功")
 
     #模板管理
-    def test_Template(self):
+    def test002(self):
         time.sleep(2)
         browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[13]/a').click()  # 点击模板管理
         # 处方模板

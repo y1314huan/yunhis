@@ -60,7 +60,7 @@ class TestHis(unittest.TestCase):
 
 
     # 收费、已收费
-    def test013(self):  # 点击收费/发药
+    def test002(self):  # 点击收费/发药
         global browser
         browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[9]/a/span[1]').click()# 点击收费/发药
         time.sleep(2)
