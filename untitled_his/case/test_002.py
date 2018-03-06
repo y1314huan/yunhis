@@ -10,6 +10,9 @@ import time
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.keys import Keys
 import datetime
+from commonshare.his_common import His
+from commonshare.his_common import browser
+p = His()
 
 
 # p = Browser()
@@ -20,48 +23,22 @@ tom = n_days.strftime('%Y-%m-%d')
 now = today.strftime('%Y-%m-%d')
 print (today.strftime('%Y-%m-%d'))
 print (n_days.strftime('%Y-%m-%d'))
-browser = webdriver.Chrome(r"C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe")  # chromedriver.exe文件的路径
 
 
 class TestHis(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        # global browser
-        browser.maximize_window()
-        # browser.get("http://yun.oasisapp.cn:9080/uc/authentication/check?login=true&phone=&redirectUrl=http://yun.oasisapp.cn:8080/yunhis/security_check.action")
-        # # ## 测试地址
+        p.setUp()
 
-        browser.get("http://47.93.156.153:9090/uc/authentication/check?login=true&phone=&redirectUrl=http://47.93.156.153:8090/yunhis/security_check.action")
-        # 准正式地址
-
-        # browser.get("http://his.oasiscare.cn/uc/authentication/check?login=true&phone=&redirectUrl=http://his.oasiscare.cn:80/yunhis/security_check.action")
-        # #正式地址
-        time.sleep(2)
-        print ("setUp")
     @classmethod
     def tearDownClass(cls):
-        browser.quit()
-        time.sleep(2)
-        print ("TearDown")
+        p.tearDown()
 
-    #登录
+    # 登录
     def test001(self):
-        global browser
-        # browser.find_element_by_id("username").clear()  # 清空账号输入框
-        browser.find_element_by_id("username").send_keys("17444444444")  # 输入用户名
-        browser.find_element_by_id("password").clear()  # 清空密码输入框
-        browser.find_element_by_id("password").send_keys("444444")  # 输入密码
-        browser.find_element_by_id("loginBtn").click()  # 点击登录
-        time.sleep(2)
-        # browser.find_element_by_xpath('//*[@id="#clinics"]/li[1]').click()#正式环境云his测试诊所
-        browser.find_element_by_xpath('//*[@id="#clinics"]/li[2]').click()  # 选择泓华金融街诊所测试和准正式
-        time.sleep(5)
-        print ("登录成功")
-
-
+        p.login()
     # 收费、已收费
     def test002(self):  # 点击收费/发药
-        global browser
         browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[9]/a/span[1]').click()# 点击收费/发药
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="content"]/div[1]/div/div/ul/li[2]/a').click()  # 点击收费
@@ -97,7 +74,7 @@ class TestHis(unittest.TestCase):
         time.sleep(5)
         ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer7"]/div[2]/div/ul/li[2]/div[1]/input')))  #
         ys.clear()
-        ys.send_keys(u"536.85") # 输入现金金额
+        ys.send_keys(u"721.59") # 输入现金金额
         time.sleep(5)
         ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer7"]/div[2]/div/ul/li[2]/div[2]/i[1]')))  #
         ys.click()  # 选择刷卡

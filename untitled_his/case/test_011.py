@@ -10,8 +10,10 @@ import unittest
 import time
 from selenium.webdriver.support.ui import Select
 import datetime
+from commonshare.his_common import His
+from commonshare.his_common import browser
+p = His()
 
-browser = webdriver.Chrome(r"C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe")  # chromedriver.exe文件的路径
 
 today = datetime.datetime.now()
 days = datetime.timedelta(days=1)
@@ -24,36 +26,15 @@ print (n_days.strftime('%Y-%m-%d'))
 class TestHis(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        global browser
-        browser.maximize_window()
-        # browser.get("http://yun.oasisapp.cn:9080/uc/authentication/check?login=true&phone=&redirectUrl=http://yun.oasisapp.cn:8080/yunhis/security_check.action")
-        ## 测试地址
+        p.setUp()
 
-        browser.get("http://47.93.156.153:9090/uc/authentication/check?login=true&phone=&redirectUrl=http://47.93.156.153:8090/yunhis/security_check.action")
-        # # 准正式地址
-
-        # browser.get("http://his.oasiscare.cn/uc/authentication/check?login=true&phone=&redirectUrl=http://his.oasiscare.cn:80/yunhis/security_check.action")
-        # #正式地址
-        time.sleep(2)
-        print ("setUp")
     @classmethod
     def tearDownClass(cls):
-        browser.quit()
-        time.sleep(2)
-        print ("TearDown")
+        p.tearDown()
 
-    #登录
+    # 登录
     def test001(self):
-        browser.find_element_by_id("username").clear()  # 清空账号输入框
-        browser.find_element_by_id("username").send_keys("17444444444")  # 输入用户名
-        browser.find_element_by_id("password").clear()  # 清空密码输入框
-        browser.find_element_by_id("password").send_keys("444444")  # 输入密码
-        browser.find_element_by_id("loginBtn").click()  # 点击登录
-        time.sleep(2)
-        # browser.find_element_by_xpath('//*[@id="#clinics"]/li[1]').click()#正式环境云his测试诊所
-        browser.find_element_by_xpath('//*[@id="#clinics"]/li[2]').click()  # 选择泓华金融街诊所测试和准正式
-        time.sleep(5)
-        print ("登录成功")
+        p.login()
 
 
     # 收费、已收费

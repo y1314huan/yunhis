@@ -12,7 +12,10 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
 import datetime
-browser = webdriver.Chrome(r"C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe")  # chromedriver.exe文件的路径
+from commonshare.his_common import His
+from commonshare.his_common import browser
+p = His()
+
 today = datetime.datetime.now()
 days = datetime.timedelta(days=1)
 n_days = today + days
@@ -24,23 +27,15 @@ print (n_days.strftime('%Y-%m-%d'))
 class TestHis(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        global browser
-        browser.maximize_window()
-        # browser.get("http://yun.oasisapp.cn:9080/uc/authentication/check?login=true&phone=&redirectUrl=http://yun.oasisapp.cn:8080/yunhis/security_check.action")
-        ## 测试地址
+        p.setUp()
 
-        browser.get("http://47.93.156.153:9090/uc/authentication/check?login=true&phone=&redirectUrl=http://47.93.156.153:8090/yunhis/security_check.action")
-        # # 准正式地址
-
-        # browser.get("http://his.oasiscare.cn/uc/authentication/check?login=true&phone=&redirectUrl=http://his.oasiscare.cn:80/yunhis/security_check.action")
-        # #正式地址
-        time.sleep(2)
-        print ("setUp")
     @classmethod
     def tearDownClass(cls):
-        browser.quit()
-        time.sleep(2)
-        print ("TearDown")
+        p.tearDown()
+
+    # 登录
+    def test001(self):
+        p.login()
 
     #登录
     def test001(self):
