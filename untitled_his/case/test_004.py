@@ -38,17 +38,18 @@ class TestHis(unittest.TestCase):
 
 
     def test002(self):
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[3]/a').click()  # 点击预约挂号
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[2]/ul/li[1]/a').click()  # 点击预约挂号
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="registerName_input"]').send_keys(u"董焕焕")  #
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="registerName_searchRelate"]/p[1]').click()  # 列表中选择董焕焕
-        time.sleep(3)
-        browser.find_element_by_xpath('//*[@id="presprint_1"]').click()  # 点击保存与打印
+        time.sleep(5)
+        browser.find_element_by_xpath('//*[@id="addRegister_save"]').click()  # 点击保存
+        # browser.find_element_by_xpath('//*[@id="presprint_1"]').click()  # 点击保存与打印
+        # time.sleep(5)
+        # browser.back()
         time.sleep(2)
-        browser.back()
-        time.sleep(2)
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[4]/a/span[1]').click()  # 点击医生工作台
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[2]/ul/li[2]/a').click()  # 点击医生工作台
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="doctorDesk_nav"]/ul/li[1]/a').click()  # 点击今日就诊
         time.sleep(2)

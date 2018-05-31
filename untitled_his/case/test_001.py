@@ -38,7 +38,7 @@ class TestHis(unittest.TestCase):
     #预约挂号
     def test002(self):
         time.sleep(2)
-        WebDriverWait(browser, 30).until(lambda x: x.find_element("xpath", '/html/body/div[3]/aside/section/ul/li[3]/a/span[1]')).click()  # 点击预约挂号
+        WebDriverWait(browser, 30).until(lambda x: x.find_element("xpath", '/html/body/div[3]/aside/section/ul/li[2]/ul/li[1]/a')).click()  # 点击预约挂号
         WebDriverWait(browser, 30).until(lambda x: x.find_element("xpath", '//*[@id="registerName_input"]')).send_keys(u"董焕焕")#输入姓名
         time.sleep(1)
         WebDriverWait(browser, 30).until(lambda x: x.find_element("xpath", '//*[@id="appointment_nav"]/ul')).click()  # 点击空白处
@@ -142,22 +142,23 @@ class TestHis(unittest.TestCase):
  # 接诊
     def test003(self):
         time.sleep(2)
-        WebDriverWait(browser, 30).until(lambda x: x.find_element("xpath", '/html/body/div[3]/aside/section/ul/li[4]/a/span[1]')).click()# 点击医生工作台
+        WebDriverWait(browser, 30).until(lambda x: x.find_element("xpath", '/html/body/div[3]/aside/section/ul/li[2]/ul/li[2]/a')).click()# 点击医生工作台
         WebDriverWait(browser, 30).until(lambda x: x.find_element("xpath", '//*[@id="doctor_patient_cart_content"]/div[1]/div[2]/span[1]')).click()# 点击接诊
         time.sleep(1)
         WebDriverWait(browser, 30).until(lambda x: x.find_element("xpath", '//*[@id="chielfComplaint"]')).send_keys(u"感冒、发烧、咳嗽、嗓子疼")  # 输入主诉
+        time.sleep(2)
         WebDriverWait(browser, 30).until(lambda x: x.find_element("xpath", '//*[@id="saveForCommonMedicalRecord"]/a')).click()#点击存为常用病例
         browser.current_window_handle # 此行代码用来定位当前页面
-        time.sleep(1)
-        WebDriverWait(browser, 30).until(lambda x: x.find_element_by_css_selector('#layui-layer12 > div.layui-layer-content > div > ul > li:nth-child(1) > input[type="text"]')).send_keys(u"感冒")
+        time.sleep(5)
+        WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('//*[@id="layui-layer11"]/div[2]/div/ul/li[1]/input')).send_keys(u"感冒")
         WebDriverWait(browser, 30).until(lambda x: x.find_element("xpath", '//*[@id="saveHisTem"]')).click()#在病例名称弹窗处点击保存
         WebDriverWait(browser, 30).until(lambda x: x.find_element("xpath", '//*[@id="doctorAdvice"]')).send_keys(u"多喝水，好好休息")#填写处理意见
         time.sleep(1)
-        browser.current_window_handle  # 此行代码用来定位当前页面
-        time.sleep(1)
         WebDriverWait(browser, 30).until(lambda x: x.find_element("xpath",'//*[@id="saveForCommondoctorAdvice"]/a')).click()  #点击存为存为常用处理意见
-        WebDriverWait(browser, 30).until(lambda x: x.find_element("xpath", '//*[@id="layui-layer15"]/div[2]/div/ul/li[1]/input')).clear()#清除输入框
-        WebDriverWait(browser, 30).until(lambda x: x.find_element("xpath", '//*[@id="layui-layer15"]/div[2]/div/ul/li[1]/input')).send_keys(u"处理意见模板保存")#填写处理意见名称
+        browser.current_window_handle  # 此行代码用来定位当前页面
+        time.sleep(5)
+        WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath( '//*[@id="layui-layer14"]/div[2]/div/ul/li[1]/input')).clear()#清除输入框
+        WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath( '//*[@id="layui-layer14"]/div[2]/div/ul/li[1]/input')).send_keys(u"处理意见模板保存")#填写处理意见名称
         WebDriverWait(browser, 30).until(lambda x: x.find_element("id", "saveDocterSeeTem")).click()#点击处理意见弹窗中的保存
         print ("填写病例成功")
 
@@ -196,7 +197,7 @@ class TestHis(unittest.TestCase):
         time.sleep(1)
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('/html/body/span/span/span[1]/input')).send_keys(u"泌尿系超声")#输入泌尿系超声
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('/html/body/span/span/span[1]/input')).send_keys(Keys.ENTER)#选择泌尿系超声
-        time.sleep(1)
+        time.sleep(2)
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('//*[@id="saveCheckoutItems"]')).click()  # 点击保存
         time.sleep(1)
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('//*[@id="checkoutPresprint"]')).click()  #点击打印
@@ -254,7 +255,7 @@ class TestHis(unittest.TestCase):
         InputType.select_by_value("10001000012")#诊费由常规诊费   ￥500改成急诊诊费   ￥1000
         time.sleep(1)
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_css_selector("#addOtherFee")).send_keys(u"代煎费")  # 其他费用
-        time.sleep(2)
+        time.sleep(3)
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_css_selector("#addOtherRelateList > p > span.name.name-text")).click()  # 选择代煎费
         time.sleep(1)
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_css_selector("#prescription_save")).click()  # 点击处方处的保存
@@ -271,7 +272,8 @@ class TestHis(unittest.TestCase):
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_css_selector("#seeDoctoring_nav > ul > li.herbal-pres > a")).click()  # 点击草药处方
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('//*[@id="herbalsPresBox"]/div/div[2]/div/div[2]/div/ul/li/div/div[1]/div[1]/input')).send_keys(u"荆芥")  # 在草药输入框中输入“荆芥”
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('//*[@id="herbalsPresBox"]/div/div[2]/div/div[2]/div/ul/li/div/div[1]/div[1]/div/div/div[2]/p[1]/span[1]')).click()  # 选择荆芥
-        WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('//*[@id="herbalsPresBox"]/div/div[2]/div/div[2]/div/ul/li/div/div[1]/span/input')).click()  # 清除
+        WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('//*[@id="herbalsPresBox"]/div/div[2]/div/div[2]/div/ul/li/div/div[1]/span/input')).clear()  # 清除
+        time.sleep(1)
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('//*[@id="herbalsPresBox"]/div/div[2]/div/div[2]/div/ul/li/div/div[1]/span/input')).send_keys(30)  #
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('//*[@id="herbalsPresBox"]/div/div[2]/div/div[2]/div/ul/li/div/div[2]/span[1]/img')).click()  # 添加草药“荆芥”30g
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('//*[@id="herbalsPresBox"]/div/div[2]/div/div[2]/div/ul/li/div/div[1]/div[1]/input')).send_keys(u"防风")  # 在草药输入框中输入“防风”
@@ -334,7 +336,7 @@ class TestHis(unittest.TestCase):
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_css_selector("li > input[type=\"text\"]")).clear()#清除处方模板输入框
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_css_selector("li > input[type=\"text\"]")).send_keys(u"草药模板")#输入处方模板名称
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('//*[@id="presTanchuang"]/ul/li[3]/button')).click()#在处方模板名称弹窗中点击保存
-        time.sleep(1)
+        time.sleep(2)
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('//*[@id="herbalPres_save"]')).click()#点击保存
         time.sleep(2)
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('//*[@id="contaleBtn"]/button[3]')).click()#点击打印
@@ -373,13 +375,14 @@ class TestHis(unittest.TestCase):
         browser.back()
         time.sleep(1)
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('//*[@id="seeDoctoring_nav"]/ul/li[3]/a')).click()  #点击检查项目
-        WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('//*[@id="checkoutReportBox"]/div[2]/div[1]/div/img')).click()  #点击删除
+        WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('//*[@id="checkoutReportBox"]/div[1]/div[1]/div/img')).click()  #点击删除
         time.sleep(1)
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('//*[@id="select2-checkoutSearchLis-container"]')).click()  #点击检查项目
         time.sleep(1)
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('/html/body/span/span/span[1]/input')).send_keys(u"经颅多普勒超声 ¥1500")  #
         time.sleep(1)
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('/html/body/span/span/span[1]/input')).send_keys(Keys.ENTER)  #选择经颅多普勒超声 ¥1500
+        time.sleep(1)
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('//*[@id="saveCheckoutItems"]')).click()  #
         time.sleep(1)
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('//*[@id="checkoutPresprint"]')).click()  #点击打印
@@ -419,7 +422,7 @@ class TestHis(unittest.TestCase):
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('//*[@id="prescription_print"]')).click()  #点击打印
         time.sleep(1)
         browser.back()  #
-        time.sleep(1)
+        time.sleep(2)
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('//*[@id="seeDoctoring_nav"]/ul/li[6]/a')).click()  #点击草药处方
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('//*[@id="herbalsPresBox"]/div/div[2]/div/div[1]/ul/li[11]')).click()  #点击炙甘草
         WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('//*[@id="herbalsPresBox"]/div/div[2]/div/div[1]/ul/li[11]/span[4]')).click()  #点击删除
@@ -453,8 +456,8 @@ class TestHis(unittest.TestCase):
     # 检验工作台
     def test010(self):  # 检验工作台
         time.sleep(2)
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[5]/a/span[1]').click()  # 点击检验工作台
-        time.sleep(1)
+        browser.find_element_by_xpath('//*[@id="Jiu_Zhen"]/li[3]/a').click()  # 点击检验工作台
+        time.sleep(3)
         browser.find_element_by_xpath('//*[@id="inspect_patient_content"]/div[1]/div[2]/a').click()  # 点击开始检验
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="inspectSavePrint"]').click()  # 点击保存与打印
@@ -472,7 +475,7 @@ class TestHis(unittest.TestCase):
 
     # 治疗工作台
     def test011(self):
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[7]/a').click()  # 点击治疗
+        browser.find_element_by_xpath('//*[@id="Jiu_Zhen"]/li[6]/a').click()  # 点击治疗
         time.sleep(1)
         browser.find_element_by_xpath('//*[@id="checkout_patient_cart_content"]/div[1]/div[2]/a').click()#点击开始治疗
         time.sleep(2)
@@ -492,8 +495,8 @@ class TestHis(unittest.TestCase):
     # 检查工作台
     def test012(self):  # 检查工作台
         time.sleep(2)
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[6]/a/span[1]').click()# 点击检查工作台
-        time.sleep(1)
+        browser.find_element_by_xpath('//*[@id="Jiu_Zhen"]/li[4]/a').click()# 点击检查工作台
+        time.sleep(3)
         browser.find_element_by_xpath('//*[@id="checkout_patient_cart_content"]/div[1]/div[2]/a').click()  # 点击开始检查
         time.sleep(5)
         browser.find_element_by_xpath('//*[@id="chDes"]').send_keys(u"头疼、发烧、咳嗽、眩晕")  # 输入描述信息
@@ -518,7 +521,7 @@ class TestHis(unittest.TestCase):
 # 患者管理
     def test013(self):  # 患者管理
         time.sleep(2)
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[10]/a/span[1]').click()#点击患者管理
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[3]/a').click()#点击患者管理
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="str_info"]').send_keys(u"董焕焕")  #
         time.sleep(2)
@@ -581,14 +584,14 @@ class TestHis(unittest.TestCase):
         time.sleep(2)
         browser.current_window_handle  # 此行代码用来定位当前页面
         time.sleep(2)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer9"]/span[1]')))  #
+        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer9"]/span[1]/a')))  #
         ys.click()  #点击关闭
         time.sleep(2)
 
 
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[10]/a/span[1]').click()  #点击患者管理
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[3]/a/span[1]').click()  #点击患者管理
         time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="addP"]').click()  #点击患添加
+        browser.find_element_by_xpath('//*[@id="data-search"]/div/div/div[2]/form/div[6]').click()  #点击患添加
         time.sleep(2)
         browser.current_window_handle  # 此行代码用来定位当前页面
         time.sleep(2)
@@ -612,14 +615,14 @@ class TestHis(unittest.TestCase):
         time.sleep(2)
         browser.current_window_handle  # 此行代码用来定位当前页面
         time.sleep(2)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer13"]/div[2]/div/p/button[1]')))  #
+        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.CLASS_NAME, 'forbidden_ok')))  #
         ys.click()  ##点击确定
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="ajax-content"]/div/div[1]/div[3]/i').click()  # 点击启用
         time.sleep(2)
         browser.current_window_handle  # 此行代码用来定位当前页面
         time.sleep(2)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.CLASS_NAME, "forbidden_ok")))  #
+        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.CLASS_NAME, 'forbidden_ok')))  #
         ys.click()  ##点击确定
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="gobackTo"]/i').click()  #点击返回
