@@ -45,7 +45,7 @@ class TestHis(unittest.TestCase):
 #直接售药及直接售药的退费（包括全退、部分退）
     def test002(self):
         time.sleep(2)
-        browser.find_element_by_css_selector("a.ajax-charge.ShouFei_a > span").click()  #点击收费、发药
+        browser.find_element_by_css_selector("body > div.wrapper > aside > section > ul > li.treeview.active > ul > li:nth-child(7) > a").click()  #点击收费、发药
         time.sleep(2)
         browser.find_element_by_link_text(u"直接售药").click()  # 点击直接售药
         time.sleep(2)
@@ -73,7 +73,7 @@ class TestHis(unittest.TestCase):
         time.sleep(1)
         browser.find_element_by_xpath('//*[@id="select2-charge3_fee-container"]').click()  #点击费别处的请选择
         browser.find_element_by_css_selector("input.select2-search__field").clear()  #
-        browser.find_element_by_css_selector("input.select2-search__field").send_keys(u"VIP会员")  # 输入费别
+        browser.find_element_by_css_selector("input.select2-search__field").send_keys(u"VIP")  # 输入费别
         browser.find_element_by_css_selector("input.select2-search__field").send_keys(Keys.ENTER) #选择费别
         time.sleep(1)
         browser.find_element_by_css_selector("input.privilege").clear()  #
@@ -135,7 +135,8 @@ class TestHis(unittest.TestCase):
         time.sleep(4)
         browser.back()  # 浏览器返回
         time.sleep(3)
-        browser.find_element_by_css_selector("a.ajax-charge.ShouFei_a > span").click()  # 点击收费、发药
+
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[2]/ul/li[7]/a').click()  # 点击收费、发药
         time.sleep(2)
         browser.find_element_by_link_text(u"直接售药").click()  # 点击直接售药
         time.sleep(2)
@@ -164,7 +165,7 @@ class TestHis(unittest.TestCase):
         time.sleep(1)
         browser.find_element_by_xpath('//*[@id="select2-charge3_fee-container"]').click()  # 点击费别处的请选择
         browser.find_element_by_css_selector("input.select2-search__field").clear()  #
-        browser.find_element_by_css_selector("input.select2-search__field").send_keys(u"VIP会员")  # 输入费别
+        browser.find_element_by_css_selector("input.select2-search__field").send_keys(u"VIP")  # 输入费别
         browser.find_element_by_css_selector("input.select2-search__field").send_keys(Keys.ENTER)  # 选择费别
         time.sleep(2)
         target = browser.find_element_by_xpath('//*[@id="suer_order"]')  # 滑动到代收付页面最底部
@@ -233,8 +234,11 @@ class TestHis(unittest.TestCase):
 
 
 # #盘库
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[5]/a/span[1]').click()  # 点击诊所管理
         time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="medical"]').click()  #点击药房
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[5]/ul/li[1]/a').click()  #点击药房
+        time.sleep(2)
+        browser.find_element_by_xpath('//*[@id="layui-layer2"]/span/a').click()  # 点击关闭
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="content"]/div[3]/div/div/ul/li[3]').click()  #点击盘库单管理
         time.sleep(1)
@@ -316,14 +320,14 @@ class TestHis(unittest.TestCase):
         time.sleep(2)
         browser.current_window_handle  # 此行代码用来定位当前页面
         time.sleep(2)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.CSS_SELECTOR, '#layui-layer12 > div.layui-layer-btn.layui-layer-btn-c > a.layui-layer-btn0')))  #
+        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.CLASS_NAME, "layui-layer-btn0")))  #
         ys.click()  #在弹窗中点击是
         # browser.find_element_by_xpath('//*[@id="layui-layer12"]/div[3]/a[1]').click()  #在弹窗中点击是
         time.sleep(2)
         browser.current_window_handle  # 此行代码用来定位当前页面
         time.sleep(2)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer13"]/div[3]/a[1]')))  #
-        ys.click()  # #在弹窗中点击是
+        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer14"]/div[3]/a[1]')))  #
+        ys.click()  # #在弹窗中点击忽略
         time.sleep(5)
         ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="ajax-content"]/div/div/div[2]/ul/li[1]/ul/li/div[3]/div/input[3]')))  #
         ys.click()  #点击库存非0
@@ -348,7 +352,7 @@ class TestHis(unittest.TestCase):
         time.sleep(2)
         browser.current_window_handle  # 此行代码用来定位当前页面
         time.sleep(2)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer19"]/div[3]/a[1]')))  #
+        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.CLASS_NAME, "layui-layer-btn0")))  #
         ys.click()  # 点击确定
         time.sleep(5)
         browser.find_element_by_xpath('//*[@id="ajax-content"]/div/div[1]/div[1]/div[2]/button').click()  #点击新增盘库单
@@ -382,7 +386,7 @@ class TestHis(unittest.TestCase):
 
 # #库存管理
         time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="medical"]').click()  # 点击药房
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[5]/ul/li[1]/a').click()  # 点击药房
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="content"]/div[3]/div/div/ul/li[4]').click()  #点击库存管理
         time.sleep(2)
@@ -425,7 +429,7 @@ class TestHis(unittest.TestCase):
         InputType = Select(browser.find_element_by_xpath('//*[@id="head_form"]/div/ul[1]/li/ul/li[1]/div[2]/select'))
         InputType.select_by_value("1")#药品状态选择启用
         time.sleep(1)
-        browser.find_element_by_xpath('//*[@id="search"]').send_keys(u"阿莫西林颗粒")  #
+        browser.find_element_by_xpath('//*[@id="search"]').send_keys(u"阿莫西林胶囊")  #
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="head_form"]/div/ul[1]/li/ul/li[2]/div[4]').click()  # 点击查询
         time.sleep(3)
@@ -450,7 +454,7 @@ class TestHis(unittest.TestCase):
 
 
 #成本管理
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[8]').click()  #点击药房
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[5]/ul/li[1]/a').click()  #点击药房
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="content"]/div[3]/div/div/ul/li[5]').click()  #点击成本管理
         time.sleep(2)
@@ -478,7 +482,7 @@ class TestHis(unittest.TestCase):
 
 # #汇总查询
         time.sleep(3)
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[8]').click()  #点击药房
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[5]/ul/li[1]/a').click()  #点击药房
         time.sleep(3)
         browser.find_element_by_xpath('//*[@id="content"]/div[3]/div/div/ul/li[6]/a').click()  #点击汇总查询
         time.sleep(1)
@@ -585,8 +589,9 @@ class TestHis(unittest.TestCase):
 
 
 #结算管理
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[2]/a').click()  # 点击就诊流程
         time.sleep(4)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '/html/body/div[3]/aside/section/ul/li[9]/a')))  #
+        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '/html/body/div[3]/aside/section/ul/li[2]/ul/li[7]/a')))  #
         ys.click()  #点击收费、发药
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="content"]/div[1]/div/div/ul/li[4]').click()  #点击结算管理

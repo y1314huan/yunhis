@@ -39,7 +39,7 @@ class TestHis(unittest.TestCase):
         p.login()
 #挂账管理
         time.sleep(2)
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[9]').click()  #点击收费发药
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[2]/ul/li[7]/a').click()  #点击收费发药
         time.sleep(1)
         browser.find_element_by_xpath('//*[@id="content"]/div[1]/div/div/ul/li[5]').click()  #点击挂账管理
         time.sleep(1)
@@ -93,19 +93,20 @@ class TestHis(unittest.TestCase):
 
         browser.current_window_handle  # 此行代码用来定位当前页面
         time.sleep(5)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer11"]/div[2]/div/ul/li[2]/div[1]/i[1]')))  #
+
+        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer10"]/div[2]/div/ul/li[2]/div[1]/i[1]')))  #
         ys.click()  #选择现金
         time.sleep(5)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer11"]/div[2]/div/ul/li[2]/div[1]/input')))  #
+        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer10"]/div[2]/div/ul/li[2]/div[1]/input')))  #
         ys.clear()
         ys.send_keys(u"645.00") # 输入现金金额
         time.sleep(5)
         ys = WebDriverWait(browser, 20, 0.5).until(
-            EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer11"]/div[2]/div/ul/li[2]/div[2]/i[1]')))  #
+            EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer10"]/div[2]/div/ul/li[2]/div[2]/i[1]')))  #
         ys.click()  # 选择刷卡
         time.sleep(5)
         ys = WebDriverWait(browser, 20, 0.5).until(
-            EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer11"]/div[2]/div/ul/li[2]/div[2]/input')))  #
+            EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer10"]/div[2]/div/ul/li[2]/div[2]/input')))  #
         ys.clear()
         ys.send_keys(u"500.00")  # 输入刷卡金额
         time.sleep(5)
@@ -123,18 +124,18 @@ class TestHis(unittest.TestCase):
         # ys.clear()
         # ys.send_keys(u"0.01")  # 输入支付宝金额
         # time.sleep(5)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer11"]/div[2]/div/ul/li[4]/div[1]/i[1]')))  #个人汇款
+        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer10"]/div[2]/div/ul/li[4]/div[1]/i[1]')))  #个人汇款
         ys.click()  # 选择个人汇款
         time.sleep(5)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer11"]/div[2]/div/ul/li[4]/div[1]/input')))  # 输入个人汇款金额
+        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer10"]/div[2]/div/ul/li[4]/div[1]/input')))  # 输入个人汇款金额
         ys.clear()
         ys.send_keys(u"500")  # 输入个人汇款金额
         time.sleep(5)
         ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located(
-            (By.XPATH, '//*[@id="layui-layer11"]/div[2]/div/ul/li[4]/div[2]/i[1]')))  # 公司汇款
+            (By.XPATH, '//*[@id="layui-layer10"]/div[2]/div/ul/li[4]/div[2]/i[1]')))  # 公司汇款
         ys.click()  # 选择公司汇款
         time.sleep(5)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer11"]/div[2]/div/ul/li[4]/div[2]/input')))  # 公司汇款
+        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer10"]/div[2]/div/ul/li[4]/div[2]/input')))  # 公司汇款
         ys.clear()
         ys.send_keys(u"500")  # 输入公司汇款金额
         time.sleep(5)
@@ -146,11 +147,11 @@ class TestHis(unittest.TestCase):
         # ys.send_keys(u"500")   # 储值卡输入金额
         time.sleep(5)
         ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located(
-            (By.XPATH, '//*[@id="layui-layer11"]/div[2]/div/ul/li[5]/div[2]/i[1]')))  # 选择其他
+            (By.XPATH, '//*[@id="layui-layer10"]/div[2]/div/ul/li[5]/div[2]/i[1]')))  # 选择其他
         ys.click()  # 选择其他
         time.sleep(5)
         ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located(
-            (By.XPATH, '//*[@id="layui-layer11"]/div[2]/div/ul/li[5]/div[2]/input')))  # 其他输入金额
+            (By.XPATH, '//*[@id="layui-layer10"]/div[2]/div/ul/li[5]/div[2]/input')))  # 其他输入金额
         ys.clear()
         ys.send_keys(u"1000")  # 其他输入金额
         time.sleep(5)
@@ -171,7 +172,7 @@ class TestHis(unittest.TestCase):
 
 # #保险回款
         time.sleep(2)
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[9]').click()  #点击收费发药
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[2]/ul/li[7]/a').click()  #点击收费发药
         time.sleep(1)
         browser.find_element_by_xpath('//*[@id="content"]/div[1]/div/div/ul/li[6]/a').click()  #点击保险回款
         time.sleep(1)
@@ -226,6 +227,8 @@ class TestHis(unittest.TestCase):
         time.sleep(1)
         browser.find_element_by_xpath('//*[@id="ajax-content"]/div/div/div[1]/ul[2]/li/button').click()  #点击查询
         time.sleep(8)
+        browser.find_element_by_xpath('//*[@id="patientMessage"]').clear()  #
+        time.sleep(3)
         browser.find_element_by_xpath('//*[@id="charge6_table"]/tbody/tr[1]/td[11]/span[1]').click()  #点击回款
         time.sleep(2)
         browser.current_window_handle  # 此行代码用来定位当前页面

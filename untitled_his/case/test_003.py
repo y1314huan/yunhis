@@ -38,7 +38,7 @@ class TestHis(unittest.TestCase):
 
     # 发药、退药
     def test002(self):
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[9]/a/span[1]').click()# 点击收费/发药
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[2]/ul/li[7]/a').click()# 点击收费/发药
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="content"]/div[1]/div/div/ul/li[1]').click()  # 点击发药
         time.sleep(3)
@@ -84,7 +84,7 @@ class TestHis(unittest.TestCase):
     # 退费、退费管理
     def test003(self):
         time.sleep(2)
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[9]/a/span[1]').click()  # 点击收费/发药
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[2]/ul/li[7]/a').click()  # 点击收费/发药
         time.sleep(3)
         ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.CSS_SELECTOR, "#content > div.charge.subhead > div > div > ul > li:nth-child(4) > a")))  #
         ys.click()  #点击结算管理
@@ -108,7 +108,7 @@ class TestHis(unittest.TestCase):
         time.sleep(5)
         ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.CLASS_NAME, "layui-layer-btn0")))  #
         ys.click()  #点击退费弹窗中的确定
-        time.sleep(15)
+        time.sleep(5)
         browser.back()
         time.sleep(3)
 
