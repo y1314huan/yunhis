@@ -43,18 +43,11 @@ class TestHis(unittest.TestCase):
 #系统设置
     def test002(self):
         time.sleep(2)
-        target = browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[17]/a/span[1]')  # 滑动到个人信息
-        browser.execute_script("arguments[0].scrollIntoView();", target)  # 滑动到个人信息
-        time.sleep(4)
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[14]/a/span[1]').click()#点击系统管理
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[6]/a/span[1]').click()#点击系统设置
         time.sleep(3)
-        browser.find_element_by_css_selector("body > div.wrapper > aside > section > ul > li.treeview.active > ul > li:nth-child(1) > a").click() #点击诊所管理
-        time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="clinic_info"]/a').click()  #点击诊所信息
-        time.sleep(2)
 
 # 添加检验项目
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[14]/ul/li[4]/a').click()  # 点击收费项目设置
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[6]/ul/li[1]/a').click()  # 点击收费项目设置
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="collect_fees"]/ul/li[1]/a').click()  # 点击检验项目
         time.sleep(1)
@@ -170,7 +163,7 @@ class TestHis(unittest.TestCase):
         time.sleep(2)
         browser.refresh()
         time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="checkout_btn"]').click()  #点击添加检验项目
+        browser.find_element_by_xpath('//*[@id="checkup_btn"]').click()  #点击添加检验项目
         time.sleep(1)
         browser.find_element_by_xpath('//*[@id="select2-inspect_item_change-container"]/span').click()   #点击检查类型
         time.sleep(1)
@@ -375,14 +368,9 @@ class TestHis(unittest.TestCase):
 # 字典、
 # 添加费别字典
         time.sleep(2)
-        target = browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[17]')  #
-        browser.execute_script("arguments[0].scrollIntoView();", target)  #
-        time.sleep(2)
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[14]').click()  #点击系统管理
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[6]/a/span[1]').click()  #点击系统管理
         time.sleep(1)
-        browser.find_element_by_css_selector("body > div.wrapper > aside > section > ul > li.treeview.active > ul > li:nth-child(5) > a").click()  #点击字典
-        time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="feibie"]/a').click()  # 点击费别字典
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[6]/ul/li[2]/a').click()  #点击字典
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="adds_diction"]/button[1]').click()  #点击添加费别
         time.sleep(1)
@@ -577,8 +565,8 @@ class TestHis(unittest.TestCase):
         browser.find_element_by_xpath('//*[@id="btn_cun_one_1"]').click()  #点击保存
         time.sleep(5)
         browser.refresh()
-        time.sleep(3)
-        browser.find_element_by_xpath('//*[@id="tr_0"]/td[3]/span[2]').click()  #点击设置折扣
+        time.sleep(4)
+        browser.find_element_by_xpath('//*[@id="tr_0"]/td[3]/span[3]').click()  #点击设置折扣
         time.sleep(10)
         browser.find_element_by_xpath('//*[@id="select2-search_select-container"]').click()  #点击搜索框
         time.sleep(3)
@@ -648,7 +636,7 @@ class TestHis(unittest.TestCase):
         browser.find_element_by_xpath('//*[@id="form_2"]/ul/li[7]/input').send_keys(u"备注新增保险")  #
         time.sleep(1)
         browser.find_element_by_xpath('//*[@id="sub_btn_insurance"]').click()  #点击保存
-        time.sleep(1)
+        time.sleep(2)
         browser.find_element_by_class_name("make_over_BX").click()  #点击修改
         time.sleep(1)
         browser.find_element_by_xpath('//*[@id="form_22"]/ul/li[1]/input').clear()  #
@@ -785,10 +773,14 @@ class TestHis(unittest.TestCase):
         time.sleep(1)
         browser.find_element_by_id("search_button_type").click()  # 点击搜索
         time.sleep(5)
+        browser.find_element_by_css_selector("input.search_text1").clear()  #
+        time.sleep(2)
+        browser.find_element_by_id("search_button_type").click()  # 点击搜索
+        time.sleep(2)
         browser.find_element_by_link_text(u"新增").click()  # 耗材分类点击新增
         time.sleep(2)
         browser.current_window_handle  # 此行代码用来定位当前页面
-        time.sleep(2)
+        time.sleep(3)
         browser.find_element_by_css_selector("input.add-type-name").clear()  #
         browser.find_element_by_css_selector("input.add-type-name").send_keys(u"新增分类")  # 在弹窗中输入分类名称
         browser.find_element_by_css_selector("input.add-save-btn").click()  # 点击确定按钮
@@ -797,9 +789,9 @@ class TestHis(unittest.TestCase):
         time.sleep(2)
         browser.current_window_handle  # 此行代码用来定位当前页面
         time.sleep(5)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer19"]/div[2]/div/div/div[2]/ul/li[2]/input')))  #
+        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer20"]/div[2]/div/div/div[2]/ul/li[2]/input')))  #
         ys.click()  #选择一个新增的分类
-        time.sleep(1)
+        time.sleep(3)
         browser.find_element_by_css_selector("input.que-ding").click()  # 点击确定
 
 
@@ -807,7 +799,7 @@ class TestHis(unittest.TestCase):
 #药品字典
         time.sleep(3)
         browser.find_element_by_link_text(u"药品字典").click()  # 点击药品字典
-        time.sleep(1)
+        time.sleep(3)
         browser.find_element_by_id("add_medicine_text").click()  # 点击新增药品
         time.sleep(1)
         browser.find_element_by_name("genericname").click()  #

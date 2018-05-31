@@ -40,12 +40,9 @@ class TestHis(unittest.TestCase):
     #套餐
     def test002(self):
         time.sleep(2)
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[14]/a/span[1]').click()  #点击系统管理
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[6]/a').click()  #点击系统设置
         time.sleep(2)
-        target = browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[14]/ul/li[5]/a')  #滑动到字典
-        browser.execute_script("arguments[0].scrollIntoView();", target)  #
-        time.sleep(2)
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[14]/ul/li[4]/a').click()  #点击收费项目设置
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[6]/ul/li[1]/a').click()  #点击收费项目设置
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="collect_fees"]/ul/li[4]/a').click()  #点及其他项目
         time.sleep(2)
@@ -71,10 +68,20 @@ class TestHis(unittest.TestCase):
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="addMadiclRelateList"]/p/span[1]').click()  #选择三伏贴
         time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="addMadicine"]').send_keys(u"达克宁")  #
+        browser.find_element_by_xpath('//*[@id="backups_yaopin"]/td[7]/input').send_keys("1")  # 单次计量为1
         time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="addMadiclRelateList"]/p/span[1]').click()  #选择达克宁
+        browser.find_element_by_xpath('//*[@id="backups_yaopin"]/td[8]/input').send_keys("1")  # 数量为1
         time.sleep(2)
+        browser.find_element_by_xpath('//*[@id="backups_yaopin"]/td[9]/input').send_keys("1")  # 天数为1
+        time.sleep(2)
+        # browser.find_element_by_xpath('//*[@id="addMadicine"]').send_keys(u"达克宁")  #
+        # time.sleep(2)
+        # browser.find_element_by_xpath('//*[@id="addMadiclRelateList"]/p/span[1]').click()  #选择达克宁
+        # time.sleep(2)
+        # browser.find_element_by_css_selector("#backups_yaopin > td:nth-child(7) > input").send_keys("1")  # 单次为1
+        # time.sleep(2)
+        # browser.find_element_by_css_selector("#backups_yaopin > td:nth-child(8) > input").send_keys("1")  # 数量为1
+        # time.sleep(2)
         InputType = Select(browser.find_element_by_xpath('//*[@id="projectType"]'))#选择耗材
         InputType.select_by_value("2")
         time.sleep(1)
@@ -151,7 +158,9 @@ class TestHis(unittest.TestCase):
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="orherRelation"]').click()  #点击返回
         time.sleep(2)
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[4]/a/span[1]').click()  #点击医生工作台
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[2]/a/span[1]').click()  # 点击就诊流程
+        time.sleep(2)
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[2]/ul/li[2]/a').click()  #点击医生工作台
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="fasterLookDoctorBtn"]').click()  #点击快速接诊
         time.sleep(2)
@@ -213,11 +222,11 @@ class TestHis(unittest.TestCase):
         time.sleep(2)
         target = browser.find_element_by_xpath('//*[@id="addOtherFee"]')  #
         browser.execute_script("arguments[0].scrollIntoView();", target)  #
-        time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="prescription_save"]').click()  #点击保存
-        time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="setmeal"]/div[2]/div/span').click()  #点击打印
         time.sleep(3)
+        browser.find_element_by_xpath('//*[@id="prescription_save"]').click()  #点击保存
+        time.sleep(3)
+        browser.find_element_by_xpath('//*[@id="prescription_print"]').click()  #点击打印
+        time.sleep(5)
         browser.back()
         time.sleep(2)
         browser.find_element_by_css_selector("#seeDoctoring_nav > ul > li.herbal-pres > a").click()  # 点击草药处方
@@ -257,16 +266,12 @@ class TestHis(unittest.TestCase):
 
         # 检验工作台
         time.sleep(2)
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[5]/a/span[1]').click()  # 点击检验工作台
-        time.sleep(1)
+        browser.find_element_by_xpath('//*[@id="Jiu_Zhen"]/li[3]/a').click()  # 点击检验工作台
+        time.sleep(3)
         browser.find_element_by_xpath('//*[@id="inspect_patient_content"]/div[1]/div[2]/a').click()  # 点击开始检验
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="inspectSavePrint"]').click()  # 点击保存与打印
         time.sleep(3)
-        browser.current_window_handle  # 此行代码用来定位当前页面
-        time.sleep(2)
-        # browser.find_element_by_xpath('//*[@id="inSaveYes"]').click()  #点击继续
-        # time.sleep(3)
         browser.back()  # 点击浏览器的返回
         time.sleep(5)
         browser.find_element_by_xpath('//*[@id="inspectSystm_patientCart_tab"]/li[3]/span[2]').click()  # 点击已完成
@@ -279,7 +284,7 @@ class TestHis(unittest.TestCase):
         time.sleep(2)
 
         # 治疗工作台
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[7]/a').click()  # 点击治疗
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[2]/ul/li[6]/a').click()  # 点击治疗
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="checkout_patient_cart_content"]/div[1]/div[2]/a').click()#点击开始治疗
         time.sleep(2)
@@ -297,7 +302,7 @@ class TestHis(unittest.TestCase):
 
         # 检查工作台
         time.sleep(2)
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[6]/a/span[1]').click()# 点击检查工作台
+        browser.find_element_by_xpath('//*[@id="Jiu_Zhen"]/li[4]/a').click()# 点击检查工作台
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="checkout_patient_cart_content"]/div[1]/div[2]/a').click()  # 点击开始检查
         time.sleep(2)

@@ -40,7 +40,7 @@ class TestHis(unittest.TestCase):
 
     #签到接诊
     def test002(self):
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[3]/a/span[1]').click()  # 点击预约挂号
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[2]/ul/li[1]/a').click()  # 点击预约挂号
         time.sleep(5)
         browser.find_element_by_xpath('//*[@id="registerName_input"]').send_keys(u"董焕焕")  # 输入姓名
         time.sleep(2)
@@ -54,13 +54,13 @@ class TestHis(unittest.TestCase):
         print ("预约挂号成功")
 
 
-        browser.find_element_by_xpath('//*[@id="appointment_nav"]/ul/li[2]/a').click()  # 点击患者管理
+        browser.find_element_by_xpath('//*[@id="appointment_nav"]/ul/li[2]/a').click()  # 点击患者列表
         time.sleep(1)
         browser.find_element_by_xpath('//*[@id="appointRegis_nextDate_button"]').click()  # 点击下一天
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="querybtn"]').click()  # 点击查询
         time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="appointRegister_patientCart_content"]/tr/td[11]/a').click()  # 点击改约
+        browser.find_element_by_xpath('//*[@id="appointRegister_patientCart_content"]/tr[1]/td[11]/a').click()  # 点击改约
         time.sleep(3)
         browser.find_element_by_xpath('//*[@id="regis_data"]').clear()  #
         time.sleep(2)
@@ -69,7 +69,7 @@ class TestHis(unittest.TestCase):
         browser.find_element_by_xpath('//*[@id="presprint_1"]').click()  # 点击保存并打印
         time.sleep(2)
         browser.back()
-        time.sleep(1)
+        time.sleep(2)
         browser.find_element_by_xpath('//*[@id="appointment_nav"]/ul/li[2]/a').click()  # 点击患者列表
         time.sleep(2)
 
@@ -99,8 +99,7 @@ class TestHis(unittest.TestCase):
         time.sleep(2)
         browser.find_element_by_xpath( '//*[@id="appointRegister_patientCart_content"]/tr/td[11]/p[1]').click()  # 点击签到
         time.sleep(5)
-        # browser.find_element_by_xpath('/html/body/div[2]/aside/section/ul/li[3]/a/span[1]').click()  # 点击医生工作台
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[4]/a').click()  # 点击医生工作台
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[2]/ul/li[2]/a').click()  # 点击医生工作台
         time.sleep(5)
         browser.find_element_by_xpath('//*[@id="doctor_patient_cart_content"]/div[1]/div[2]/span[1]').click()  # 点击接诊
         time.sleep(2)
@@ -153,7 +152,7 @@ class TestHis(unittest.TestCase):
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="offMadicalMess"]/div/a/button').click()  # 点击是
         time.sleep(2)
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[9]/a/span[1]').click()# 点击收费/发药
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[2]/ul/li[7]/a').click()# 点击收费/发药
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="content"]/div[1]/div/div/ul/li[2]/a').click()#点击收费
         time.sleep(2)
@@ -163,13 +162,13 @@ class TestHis(unittest.TestCase):
         browser.execute_script("arguments[0].scrollIntoView();", target)  # 滑动到代收付页面最底部
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="buying_credit"]').click()  # 点击挂账
-        time.sleep(2)
+        time.sleep(3)
         browser.back()
 
 
     #快速接诊
         time.sleep(2)
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[4]/a/span[1]').click()#点击医生工作台
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[2]/ul/li[2]/a').click()#点击医生工作台
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="fasterLookDoctorBtn"]').click()  #点击快速接诊
         time.sleep(3)
@@ -194,8 +193,11 @@ class TestHis(unittest.TestCase):
     #药品（耗材）入库、出库
     def test003(self):
         # 入库
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[5]/a/span[1]').click()  # 点击诊所管理
         time.sleep(3)
-        browser.find_element_by_xpath('//*[@id="medical"]').click()  # 点击药房
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[5]/ul/li[1]/a').click()  # 点击药房
+        time.sleep(2)
+        browser.find_element_by_xpath('//*[@id="layui-layer11"]/span/a').click()  # 点击关闭
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="content"]/div[3]/div/div/ul/li[1]/a/span').click()  # 点击入库单管理
         time.sleep(1)
@@ -318,7 +320,7 @@ class TestHis(unittest.TestCase):
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="home_search"]/span[2]').click()  # 点击查询
         time.sleep(5)
-        browser.find_element_by_xpath('//*[@id="medical"]').click()  # 点击药房
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[5]/ul/li[1]/a').click()  # 点击药房
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="content"]/div[3]/div/div/ul/li[1]/a/span').click()  # 点击入库单管理
         time.sleep(1)

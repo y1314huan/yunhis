@@ -35,7 +35,7 @@ class TestHis(unittest.TestCase):
     #模板管理
     def test002(self):
         time.sleep(2)
-        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[13]/a').click()  # 点击模板管理
+        browser.find_element_by_xpath('/html/body/div[3]/aside/section/ul/li[2]/ul/li[8]/a').click()  # 点击模板管理
         # 处方模板
         browser.find_element_by_link_text(u"处方模板").click()  # 点击处方模板
         time.sleep(2)
@@ -78,7 +78,7 @@ class TestHis(unittest.TestCase):
         time.sleep(1)
         browser.find_element_by_xpath('//*[@id="cf_temp_tbody_list"]/tr[2]/td[2]/input').send_keys(u"达克宁")  # 输入达克宁
         time.sleep(5)
-        browser.find_element_by_xpath('//*[@id="100000000000711"]').click()  # 选择达克宁
+        browser.find_element_by_xpath('//*[@id="170712201200245"]').click()  # 选择达克宁
         time.sleep(2)
         browser.find_element_by_xpath('//*[@id="cf_temp_tbody_list"]/tr[2]/td[6]/input').send_keys(3)  # 输入天数
         time.sleep(2)
