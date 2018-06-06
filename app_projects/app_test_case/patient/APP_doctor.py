@@ -56,17 +56,19 @@ class oasis(unittest.TestCase):
         self.driver.tap([(863, 480), (870, 482)], 500)  # 点击×
         time.sleep(2)
         self.driver.tap([(306, 1174), (359, 1176)], 500)  # 点击暂不认证
-        time.sleep(2)
-        WebDriverWait(self.driver, 30).until(lambda x: x.find_element("id", 'com.lcworld.hhylyh:id/iv_icon')).click()  #点击我的诊所
+        time.sleep(10)
+        # WebDriverWait(self.driver, 30).until(lambda x: x.find_element("id", 'com.lcworld.hhylyh:id/iv_icon')).click()  #点击我的诊所
+        WebDriverWait(self.driver, 30).until(lambda x: x.find_element_by_xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.FrameLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.GridView/android.widget.RelativeLayout[8]")).click()#点击我的诊所
 
-        # WebDriverWait(self.driver, 30).until(lambda x: x.find_element_by_css_selector('#screenshotContainer > div > div > div > div > div > div.Inspector__highlighter-box___Oi319.Inspector__inspected-element-box___3mBB4')).click()#点击我的诊所
+
+        WebDriverWait(self.driver, 30).until(lambda x: x.find_element_by_xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.widget.ListView/android.view.View/android.view.View[1]")).click()#选择云his测试诊所
 
 
-        WebDriverWait(self.driver, 30).until(lambda x: x.find_element_by_css_selector('#screenshotContainer > div > div > div > div > div > div:nth-child(17)')).click()#选择云his测试诊所
 
-        WebDriverWait(self.driver, 30).until(lambda x: x.find_element_by_css_selector('#screenshotContainer > div > div > div > div > div > div:nth-child(18)')).click()#点击移动接诊
-        # WebDriverWait(self.driver, 30).until(lambda x: x.find_element("xpath", '//*[@id="screenshotContainer"]/div/div/div/div/div/div[18]')).click()  #点击移动接诊
+        WebDriverWait(self.driver, 30).until(lambda x: x.find_element_by_xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[3]")).click()#点击移动接诊
 
+
+        WebDriverWait(self.driver, 30).until(lambda x: x.find_element_by_xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[4]/android.view.View")).click()  # 点击快速接诊
 
 if __name__ == '__main__':
     unittest.main()
