@@ -9,6 +9,10 @@ import unittest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from appium import webdriver
+
+
+
 class oasis(unittest.TestCase):
     def setUp(self):
         caps = {}
@@ -49,26 +53,40 @@ class oasis(unittest.TestCase):
         self.driver.tap([(800, 894), (902, 904)], 500)  # 使用密码登录
         WebDriverWait(self.driver, 30).until(lambda x: x.find_element("id", 'com.lcworld.hhylyh:id/et_id')).send_keys("16666666661")  # 输入手机号
         WebDriverWait(self.driver, 30).until(lambda x: x.find_element("xpath", '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.widget.EditText')).send_keys("666661")  #输入密码
-        WebDriverWait(self.driver, 30).until(lambda x: x.find_element("id", 'com.lcworld.hhylyh:id/tv_login_btn')).click()  #点击登录
-        time.sleep(3)
-        self.driver.tap([(507, 1755), (576, 1760)], 500)  # 点击我知道了
-        time.sleep(3)
-        self.driver.tap([(863, 480), (870, 482)], 500)  # 点击×
         time.sleep(2)
-        self.driver.tap([(306, 1174), (359, 1176)], 500)  # 点击暂不认证
+        WebDriverWait(self.driver, 30).until(lambda x: x.find_element("id", 'com.lcworld.hhylyh:id/tv_login_btn')).click()  #点击登录
         time.sleep(10)
-        # WebDriverWait(self.driver, 30).until(lambda x: x.find_element("id", 'com.lcworld.hhylyh:id/iv_icon')).click()  #点击我的诊所
-        WebDriverWait(self.driver, 30).until(lambda x: x.find_element_by_xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.FrameLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.GridView/android.widget.RelativeLayout[8]")).click()#点击我的诊所
+        self.driver.tap([(507, 1755), (576, 1760)], 500)  # 点击我知道了
+        time.sleep(5)
+        self.driver.tap([(863, 480), (870, 482)], 500)  # 点击×
+        time.sleep(5)
+        self.driver.tap([(306, 1174), (359, 1176)], 500)  # 点击暂不认证
+        time.sleep(5)
+        self.driver.tap([(499, 1013), (547, 1055)], 500)  # 点击我的诊所
+        time.sleep(5)
+        # WebDriverWait(self.driver, 30).until(lambda x: x.find_element_by_css_selector('#screenshotContainer > div > div > div > div > div > div.Inspector__highlighter-box___Oi319.Inspector__inspected-element-box___3mBB4 > div')).click()# 点击云his测试诊所
+
+        self.driver.tap([(145,487), (200,480)], 500)  # 点击云his测试诊所
+        time.sleep(10)
+        # self.driver.tap([(521,306), (557,316)], 500)  # 点击快速接诊
+        WebDriverWait(self.driver, 30).until(lambda x: x.find_element_by_xpath('//*[@id="screenshotContainer"]/div/div/div/div/div/div[18]')).click()  # 点击快速接诊
+
+        # WebDriverWait(self.driver, 30).until(lambda x: x.find_element_by_css_selector('#screenshotContainer > div > div > div > div > div > div.Inspector__highlighter-box___Oi319.Inspector__inspected-element-box___3mBB4 > div')).click()# 点击快速接诊
 
 
-        WebDriverWait(self.driver, 30).until(lambda x: x.find_element_by_xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.widget.ListView/android.view.View/android.view.View[1]")).click()#选择云his测试诊所
 
 
+        # WebDriverWait(self.driver, 30).until(self.driver.tap([(507, 1755), (576, 1760)], 500))
+        ##screenshotContainer > div > div > div > div > div > div.Inspector__highlighter-box___Oi319.Inspector__inspected-element-box___3mBB4 > div
+        #
+        # WebDriverWait(self.driver, 30).until(lambda x: x.find_element_by_xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.widget.ListView/android.view.View/android.view.View[1]")).click()#选择云his测试诊所
+        #
 
-        WebDriverWait(self.driver, 30).until(lambda x: x.find_element_by_xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[3]")).click()#点击移动接诊
-
-
-        WebDriverWait(self.driver, 30).until(lambda x: x.find_element_by_xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[4]/android.view.View")).click()  # 点击快速接诊
+        #
+        # WebDriverWait(self.driver, 30).until(lambda x: x.find_element_by_xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[3]")).click()#点击移动接诊
+        #
+        #
+        # WebDriverWait(self.driver, 30).until(lambda x: x.find_element_by_xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[4]/android.view.View")).click()  # 点击快速接诊
 
 if __name__ == '__main__':
     unittest.main()

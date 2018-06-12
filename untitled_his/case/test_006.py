@@ -584,7 +584,7 @@ class TestHis(unittest.TestCase):
         browser.find_element_by_id("search").clear()  #
         browser.find_element_by_id("search").send_keys(u"阿莫")  #
         browser.find_element_by_id("data_search").click()  #点击查询
-        time.sleep(2)
+        time.sleep(3)
 
 
 

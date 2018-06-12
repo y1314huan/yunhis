@@ -14,6 +14,7 @@ from selenium.webdriver.common.keys import Keys
 import datetime
 from commonshare.his_common import His
 from commonshare.his_common import browser
+
 p = His()
 today = datetime.datetime.now()
 days = datetime.timedelta(days=1)
