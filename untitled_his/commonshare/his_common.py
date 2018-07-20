@@ -12,9 +12,9 @@ class His():
     def setUp(self):
         global browser
         browser.maximize_window()
-        # browser.get("http://yun.oasisapp.cn:9080/uc/authentication/check?login=true&phone=&redirectUrl=http://yun.oasisapp.cn:8080/yunhis/security_check.action")
+        browser.get("http://yun.oasisapp.cn:9080/uc/authentication/check?login=true&phone=&redirectUrl=http://yun.oasisapp.cn:8080/yunhis/security_check.action")
         # # ## 测试地址
-        browser.get("http://47.93.156.153:9090/uc/authentication/check?login=true&phone=&redirectUrl=http://47.93.156.153:8090/yunhis/security_check.action")
+        # browser.get("http://47.93.156.153:9090/uc/authentication/check?login=true&phone=&redirectUrl=http://47.93.156.153:8090/yunhis/security_check.action")
         # 准正式地址
 
         print ("setUp")
@@ -26,9 +26,9 @@ class His():
 
         global browser
         u"""这里写了一个登陆的方法，账号和密码参数化"""
-        WebDriverWait(browser, 30).until(lambda x: x.find_element("xpath", '//*[@id="username"]')).send_keys("17444444444")  # 输入用户名
+        WebDriverWait(browser, 30).until(lambda x: x.find_element("xpath", '//*[@id="username"]')).send_keys("15555555551")  # 输入用户名
         WebDriverWait(browser, 30).until(lambda x: x.find_element("xpath", '//*[@id="password"]')).clear()  # 清空密码输入框
-        WebDriverWait(browser, 30).until(lambda x: x.find_element("xpath", '//*[@id="password"]')).send_keys("444444")  # 输入密码
+        WebDriverWait(browser, 30).until(lambda x: x.find_element("xpath", '//*[@id="password"]')).send_keys("555551")  # 输入密码
         WebDriverWait(browser, 30).until(lambda x: x.find_element("xpath", '//*[@id="loginBtn"]')).click()  # 点击登录
         WebDriverWait(browser, 30).until(lambda x: x.find_element("xpath", '//*[@id="#clinics"]/li[2]')).click()  # 选择诊所
 

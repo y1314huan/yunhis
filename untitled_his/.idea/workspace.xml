@@ -50,30 +50,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="113">
-      <file leaf-file-name="test_005.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case/test_005.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6507">
-              <caret line="254" column="0" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_006.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case/test_006.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15471">
-              <caret line="586" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="679" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="test_010.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/case/test_010.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7911">
+            <state relative-caret-position="603">
               <caret line="304" column="66" selection-start-line="0" selection-start-column="0" selection-end-line="338" selection-end-column="19" />
               <folding />
             </state>
@@ -83,7 +63,7 @@
       <file leaf-file-name="test_011.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/case/test_011.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2511">
+            <state relative-caret-position="603">
               <caret line="104" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="122" selection-end-column="19" />
               <folding />
             </state>
@@ -93,7 +73,7 @@
       <file leaf-file-name="test_012.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/case/test_012.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1755">
+            <state relative-caret-position="603">
               <caret line="76" column="53" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
               <folding />
             </state>
@@ -103,38 +83,60 @@
       <file leaf-file-name="test_013.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/case/test_013.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="162" column="96" selection-start-line="0" selection-start-column="0" selection-end-line="175" selection-end-column="19" />
+            <state relative-caret-position="435">
+              <caret line="165" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="175" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimplifyCase.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lianxi/SimplifyCase.py">
+      <file leaf-file-name="test_001.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/case/test_001.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="5616">
+              <caret line="235" column="123" selection-start-line="235" selection-start-column="114" selection-end-line="235" selection-end-column="123" />
+              <folding>
+                <element signature="e#121#151#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_002.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/case/test_002.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="603">
+              <caret line="85" column="37" selection-start-line="85" selection-start-column="37" selection-end-line="85" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_007.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case/test_007.py">
+      <file leaf-file-name="test_003.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/case/test_003.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6021">
-              <caret line="236" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="285" selection-end-column="19" />
+            <state relative-caret-position="603">
+              <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_008.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case/test_008.py">
+      <file leaf-file-name="test_004.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/case/test_004.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20763">
-              <caret line="782" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="1087" selection-end-column="19" />
+            <state relative-caret-position="603">
+              <caret line="51" column="90" selection-start-line="0" selection-start-column="0" selection-end-line="140" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="his_common.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commonshare/his_common.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="30" column="116" selection-start-line="0" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -143,7 +145,7 @@
       <file leaf-file-name="test_009.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/case/test_009.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1944">
+            <state relative-caret-position="603">
               <caret line="80" column="65" selection-start-line="0" selection-start-column="0" selection-end-line="214" selection-end-column="19" />
               <folding />
             </state>
@@ -217,9 +219,9 @@
         <option value="$PROJECT_DIR$/commonshare/test_common.py" />
         <option value="$PROJECT_DIR$/lianxi/aa.py" />
         <option value="$PROJECT_DIR$/case/test_006.py" />
-        <option value="$PROJECT_DIR$/commonshare/his_common.py" />
         <option value="$PROJECT_DIR$/case/test_001.py" />
         <option value="$PROJECT_DIR$/case/test_013.py" />
+        <option value="$PROJECT_DIR$/commonshare/his_common.py" />
       </list>
     </option>
   </component>
@@ -282,7 +284,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -387,11 +389,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="E:/test/page" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Python27/Lib/site-packages/selenium/webdriver/support/wait.py&#10;Select&#9;null&#9;null&#10;value&#9;null&#9;null&#10;select_by_value&#9;null&#9;null&#10;select_by&#9;null&#9;null&#10;滑动&#9;null&#9;null&#10;Click&#9;null&#9;null" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -419,95 +421,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_013">
-    <configuration default="false" name="Unittests in test_009" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="untitled" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/test_009.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in test_010" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="untitled" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/test_010.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in test_011" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="untitled" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/test_011.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in test_012" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="untitled" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/test_012.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in test_004">
     <configuration default="false" name="Unittests in test_013" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -519,6 +433,94 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="untitled" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/test_013.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in test_001" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/test_001.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in test_002" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/test_002.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in test_003" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/test_003.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in test_004" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/test_004.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -684,19 +686,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.Abookmoneyreturn" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_009" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test_010" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test_011" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in test_012" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in test_013" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_013" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test_001" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test_002" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in test_003" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in test_004" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test_013" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_012" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test_011" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test_010" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in test_009" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test_004" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_003" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test_002" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test_001" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in test_013" />
       </list>
     </recent_temporary>
   </component>
@@ -717,34 +719,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_004 - 2018.06.20 at 14h 11m 04s.xml">
+    <history-entry file="Unittests_in_test_001 - 2018.07.03 at 18h 00m 36s.xml">
+      <configuration name="Unittests in test_001" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_002 - 2018.07.03 at 18h 02m 59s.xml">
+      <configuration name="Unittests in test_002" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_003 - 2018.07.03 at 18h 05m 06s.xml">
+      <configuration name="Unittests in test_003" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_004 - 2018.07.03 at 18h 09m 32s.xml">
       <configuration name="Unittests in test_004" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_005 - 2018.06.20 at 14h 19m 22s.xml">
-      <configuration name="Unittests in test_005" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_006 - 2018.06.20 at 14h 30m 25s.xml">
-      <configuration name="Unittests in test_006" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_007 - 2018.06.20 at 14h 35m 33s.xml">
-      <configuration name="Unittests in test_007" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_008 - 2018.06.20 at 14h 47m 51s.xml">
-      <configuration name="Unittests in test_008" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_009 - 2018.06.20 at 14h 50m 38s.xml">
-      <configuration name="Unittests in test_009" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_010 - 2018.06.20 at 14h 56m 54s.xml">
+    <history-entry file="Unittests_in_test_010 - 2018.07.03 at 17h 27m 18s.xml">
       <configuration name="Unittests in test_010" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_011 - 2018.06.20 at 14h 58m 57s.xml">
+    <history-entry file="Unittests_in_test_011 - 2018.07.03 at 17h 29m 18s.xml">
       <configuration name="Unittests in test_011" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_012 - 2018.06.20 at 15h 01m 35s.xml">
+    <history-entry file="Unittests_in_test_012 - 2018.07.03 at 17h 42m 44s.xml">
       <configuration name="Unittests in test_012" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_013 - 2018.06.20 at 15h 04m 23s.xml">
+    <history-entry file="Unittests_in_test_012 - 2018.07.03 at 17h 45m 18s.xml">
+      <configuration name="Unittests in test_012" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_013 - 2018.07.03 at 17h 49m 09s.xml">
+      <configuration name="Unittests in test_013" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_013 - 2018.07.03 at 17h 53m 05s.xml">
       <configuration name="Unittests in test_013" configurationId="tests" />
     </history-entry>
   </component>
@@ -762,21 +764,21 @@
     <editor active="false" />
     <layout>
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15885417" sideWeight="0.5924453" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15873016" sideWeight="0.5924453" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29058117" sideWeight="0.48518518" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55331755" sideWeight="0.5021164" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296593" sideWeight="0.489418" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973544" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296593" sideWeight="0.4978836" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30861723" sideWeight="0.4978836" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.104761906" sideWeight="0.4075547" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4180985" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30880928" sideWeight="0.4978836" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -958,13 +960,8 @@
           <line>521</line>
           <option name="timeStamp" value="192" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/commonshare/his_common.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="193" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="195" />
+      <option name="time" value="196" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1173,55 +1170,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lianxi/SimplifyCase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/selenium/webdriver/support/wait.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
+        <state relative-caret-position="219">
           <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commonshare/his_common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="16" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/test_001.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="161" column="127" selection-start-line="0" selection-start-column="0" selection-end-line="633" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/test_002.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="85" column="37" selection-start-line="85" selection-start-column="37" selection-end-line="85" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/test_003.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/test_004.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1107">
-          <caret line="51" column="90" selection-start-line="0" selection-start-column="0" selection-end-line="140" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/case/test_005.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6507">
+        <state relative-caret-position="603">
           <caret line="254" column="0" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
           <folding />
         </state>
@@ -1229,7 +1196,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/case/test_006.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15471">
+        <state relative-caret-position="603">
           <caret line="586" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="679" selection-end-column="19" />
           <folding />
         </state>
@@ -1237,7 +1204,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/case/test_007.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6021">
+        <state relative-caret-position="603">
           <caret line="236" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="285" selection-end-column="19" />
           <folding />
         </state>
@@ -1245,7 +1212,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/case/test_008.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20763">
+        <state relative-caret-position="603">
           <caret line="782" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="1087" selection-end-column="19" />
           <folding />
         </state>
@@ -1253,7 +1220,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/case/test_009.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1944">
+        <state relative-caret-position="603">
           <caret line="80" column="65" selection-start-line="0" selection-start-column="0" selection-end-line="214" selection-end-column="19" />
           <folding />
         </state>
@@ -1261,7 +1228,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/case/test_010.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7911">
+        <state relative-caret-position="603">
           <caret line="304" column="66" selection-start-line="0" selection-start-column="0" selection-end-line="338" selection-end-column="19" />
           <folding />
         </state>
@@ -1269,7 +1236,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/case/test_011.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2511">
+        <state relative-caret-position="603">
           <caret line="104" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="122" selection-end-column="19" />
           <folding />
         </state>
@@ -1277,7 +1244,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/case/test_012.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1755">
+        <state relative-caret-position="603">
           <caret line="76" column="53" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
           <folding />
         </state>
@@ -1285,16 +1252,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/case/test_013.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="162" column="96" selection-start-line="0" selection-start-column="0" selection-end-line="175" selection-end-column="19" />
+        <state relative-caret-position="435">
+          <caret line="165" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="175" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lianxi/SimplifyCase.py">
+    <entry file="file://$PROJECT_DIR$/commonshare/his_common.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="432">
+          <caret line="30" column="116" selection-start-line="0" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/test_001.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5616">
+          <caret line="235" column="123" selection-start-line="235" selection-start-column="114" selection-end-line="235" selection-end-column="123" />
+          <folding>
+            <element signature="e#121#151#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/test_002.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="85" column="37" selection-start-line="85" selection-start-column="37" selection-end-line="85" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/test_003.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/test_004.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="51" column="90" selection-start-line="0" selection-start-column="0" selection-end-line="140" selection-end-column="19" />
           <folding />
         </state>
       </provider>

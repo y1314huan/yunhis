@@ -155,12 +155,12 @@ class TestHis(unittest.TestCase):
         time.sleep(2)
         browser.current_window_handle  # 此行代码用来定位当前页面
         time.sleep(5)
-        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer45"]/div[2]/div/ul/li[2]/div[1]/i[1]/input')))  #
+        ys = WebDriverWait(browser, 20, 0.5).until(EC.presence_of_element_located((By.XPATH, '//*[@id="layui-layer43"]/div[2]/div/ul/li[2]/div[1]/i[1]')))  #
         ys.click()  #选择现金
         time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="layui-layer45"]/div[2]/div/ul/li[2]/div[1]/input').clear()  #
+        browser.find_element_by_xpath('//*[@id="layui-layer43"]/div[2]/div/ul/li[2]/div[1]/input').clear()  #
         time.sleep(2)
-        browser.find_element_by_xpath('//*[@id="layui-layer45"]/div[2]/div/ul/li[2]/div[1]/input').send_keys(u"11000.00")  #
+        browser.find_element_by_xpath('//*[@id="layui-layer43"]/div[2]/div/ul/li[2]/div[1]/input').send_keys(u"11000.00")  #
         time.sleep(3)
         browser.find_element_by_xpath('//*[@id="print_buying"]').click()  #点击确定
         time.sleep(3)

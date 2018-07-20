@@ -151,15 +151,15 @@ class TestHis(unittest.TestCase):
         WebDriverWait(browser, 30).until(lambda x: x.find_element("xpath", '//*[@id="saveForCommonMedicalRecord"]/a')).click()#点击存为常用病例
         browser.current_window_handle # 此行代码用来定位当前页面
         time.sleep(5)
-        WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('//*[@id="layui-layer11"]/div[2]/div/ul/li[1]/input')).send_keys(u"感冒")
+        WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath('//*[@id="layui-layer9"]/div[2]/div/ul/li[1]/input')).send_keys(u"感冒")
         WebDriverWait(browser, 30).until(lambda x: x.find_element("xpath", '//*[@id="saveHisTem"]')).click()#在病例名称弹窗处点击保存
         WebDriverWait(browser, 30).until(lambda x: x.find_element("xpath", '//*[@id="doctorAdvice"]')).send_keys(u"多喝水，好好休息")#填写处理意见
         time.sleep(1)
         WebDriverWait(browser, 30).until(lambda x: x.find_element("xpath",'//*[@id="saveForCommondoctorAdvice"]/a')).click()  #点击存为存为常用处理意见
         browser.current_window_handle  # 此行代码用来定位当前页面
         time.sleep(5)
-        WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath( '//*[@id="layui-layer14"]/div[2]/div/ul/li[1]/input')).clear()#清除输入框
-        WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath( '//*[@id="layui-layer14"]/div[2]/div/ul/li[1]/input')).send_keys(u"处理意见模板保存")#填写处理意见名称
+        WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath( '//*[@id="layui-layer12"]/div[2]/div/ul/li[1]/input')).clear()#清除输入框
+        WebDriverWait(browser, 30).until(lambda x: x.find_element_by_xpath( '//*[@id="layui-layer12"]/div[2]/div/ul/li[1]/input')).send_keys(u"处理意见模板保存")#填写处理意见名称
         WebDriverWait(browser, 30).until(lambda x: x.find_element("id", "saveDocterSeeTem")).click()#点击处理意见弹窗中的保存
         print ("填写病例成功")
 
